@@ -8,21 +8,12 @@ Author:
 
 <div style="page-break-after: always"></div>
 
-# Outline:
+# Outline: (optional)
 A. Introduction
 
 B. Rules
 C. Exercices
 
-1. 
-2. 
-3. 
-4. 
-5. 
-6. 
-7. 
-8. 
-9. 
 
 ## Rules
 ... Notebook Colabs or Jupyter Notebook 
@@ -87,7 +78,7 @@ The goal of this exercice is to learn to create a NumPy array with 0s.
 
 2. The question is validated if the solution uses `reshape` and the shape of the array is **(3, 100)**
 ---
-## Exercice 3 Slicing
+# Exercice 3 Slicing
 
 The goal of this exercice is to learn NumPy indexing/slicing. It allows to access values of the NumPy array efficiently and without a for loop. 
 
