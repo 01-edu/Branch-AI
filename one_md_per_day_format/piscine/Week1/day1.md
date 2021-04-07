@@ -26,7 +26,7 @@ Save one notebook per day or one per exercise. Use markdown to divide your noteb
 ## Ressources
 
 - https://medium.com/fintechexplained/why-should-we-use-NumPy-c14a4fb03ee9
-- https://docs.scipy.org/doc/NumPy-1.15.0/reference/
+- https://numpy.org/doc/
 - https://jakevdp.github.io/PythonDataScienceHandbook/
 
 # Exercice 1 Your first NumPy array
@@ -124,7 +124,7 @@ NumPy proposes a lot of options to generate random data. In statistics, assumpti
 
 - Normal: The normal distribution is the most important probability distribution in statistics because it fits many natural phenomena.For example, if you need to generate a data sample that represents **Heights of 14 Year Old Girls** it can be done using the normal distribution. In that case, we need two parameters: the mean (1m51) and the standard deviation (0.0741m). NumPy provides `randn` to generate normal distribution (among other)
 
-https://docs.scipy.org/doc/NumPy-1.15.0/reference/routines.random.html
+https://numpy.org/doc/stable/reference/random/generator.html
 
 1. Set the seed to 888
 2. Generate a **one-dimensional**  array of size 100 with a normal distribution
@@ -210,7 +210,7 @@ The goal of this exercise is to learn to concatenate and reshape arrays.
 
 The easiest way is to use `array.reshape(10,10)`.
 
-https://jakevdp.github.io/PythonDataScienceHandbook/02.02-the-basics-of-NumPy-arrays.html
+https://jakevdp.github.io/PythonDataScienceHandbook/ (section: The Basics of NumPy Arrays)
 
 ---
 
@@ -233,7 +233,7 @@ The goal of this exercise is to learn to access values of n-dimensional arrays e
         [1, 1, 1, 1, 1, 1, 1, 1, 1]], dtype=int8)
     ```
 
-https://jakevdp.github.io/PythonDataScienceHandbook/02.05-computation-on-arrays-broadcasting.html
+https://jakevdp.github.io/PythonDataScienceHandbook/ (section: Computation on Arrays: Broadcasting)
 
 ## Correction
 
@@ -320,7 +320,6 @@ This question is validated if, without having used a for loop or having filled t
 [ 8.  5.  8.]]
 ```
 
-https://jakevdp.github.io/PythonDataScienceHandbook/02.02-the-basics-of-NumPy-arrays.html
 
 ---
 
