@@ -327,7 +327,7 @@ This question is validated if, without having used a for loop or having filled t
 
 The goal of this exercise is to learn to perform a basic data analysis on real data using NumPy.
 
-The data set that will be used for this exercise is the wine data set.
+The data set that will be used for this exercise is the red wine data set.
 
 https://archive.ics.uci.edu/ml/datasets/wine+quality
 
@@ -341,7 +341,7 @@ How to tell if a given 2D array has null columns?
 
 4. What is the average % of alcohol on all wines in the data set ? If needed, drop `np.nan` values
 
-5. Compute the minimum, the maximum, the 25th percentile, the 50th percentile, the 75 percentile, the median of the pH
+5. Compute the minimum, the maximum, the 25th percentile, the 50th percentile, the 75th percentile, the median (50th percentile) of the pH
 
 6. Compute the average quality of the wines having the 20% least sulphates
 
@@ -383,7 +383,7 @@ This slicing gives the answer `my_data[[1,6,11],:]`.
 
     > *Note: Using `percentile` or `median` may give different results depending on the duplicate values in the column. If you do not have my results please use `percentile`.*
 
-6. This question is validated if the answer is `5.222222222222222`. The first step is to get the percentile 20% of the column `sulphates`, then create a boolean array that contains `True` of the value is smaller than the percentile 20%, then select this rows with the column quality and compute the `mean`.
+6. This question is validated if the answer is ~`5.2`. The first step is to get the percentile 20% of the column `sulphates`, then create a boolean array that contains `True` of the value is smaller than the percentile 20%, then select this rows with the column quality and compute the `mean`.
 
 7. This question is validated if the output for the best wines is:
 
@@ -428,6 +428,8 @@ The expected output is:
 - m1_t1 plays against m1_t2 ...
 
 **Usage of for loop is not allowed, you may need to use the library** `itertools` **to create permutations**
+
+https://docs.python.org/3.9/library/itertools.html
 
 ## Correction
 
