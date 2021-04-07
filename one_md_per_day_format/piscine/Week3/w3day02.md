@@ -10,7 +10,7 @@ The goal of this day is to learn to use Keras to build Neural Networks.
 
 There are two ways to build Keras models: sequential and functional.
 
-The sequential API allows you to create models layer-by-layer for most problems. It is limited in that it does not allow you to create models that share layers or have multiple inputs or outputs. The exercices focuses on the usage of the sequential API. 
+The sequential API allows you to create models layer-by-layer for most problems. It is limited in that it does not allow you to create models that share layers or have multiple inputs or outputs. The exercises focuses on the usage of the sequential API. 
 
 '2.4.3'
 
@@ -25,9 +25,9 @@ A developper
 ## Ressources 
 https://machinelearningmastery.com/tutorial-first-neural-network-python-keras/
 
-# Exercice 1 Sequential
+# Exercise 1 Sequential
 
-The goal of this exercice is to learn to call the object `Sequential`. 
+The goal of this exercise is to learn to call the object `Sequential`. 
 
 1. Put the object Sequential in a variable named `model` and print the variable `model`.
 
@@ -39,9 +39,9 @@ The goal of this exercice is to learn to call the object `Sequential`.
 
 
 
-# Exercice 2 Dense
+# Exercise 2 Dense
 
-The goal of this exercice is to learn to create layers of neurons. Keras proposes options to create custom layers. The neural networks build in these exercices do not require custom layers. `Dense` layers do the job. A dense layer is simply a layer where each unit or neuron is connected to each neuron in the next layer. As seen yesterday, there are three main types of layers: input, hidden and output. The **input layer** that specifies the number of inputs (features) is not represented as a layer in Keras. However, `Dense` has a parameter `input_dim` that gives the number of inputs in the previous layer. The output layer as any hidden layer can be created using `Dense`, the only difference is that the output layer contains one single neuron. 
+The goal of this exercise is to learn to create layers of neurons. Keras proposes options to create custom layers. The neural networks build in these exercises do not require custom layers. `Dense` layers do the job. A dense layer is simply a layer where each unit or neuron is connected to each neuron in the next layer. As seen yesterday, there are three main types of layers: input, hidden and output. The **input layer** that specifies the number of inputs (features) is not represented as a layer in Keras. However, `Dense` has a parameter `input_dim` that gives the number of inputs in the previous layer. The output layer as any hidden layer can be created using `Dense`, the only difference is that the output layer contains one single neuron. 
 
 1. Create a `Dense` layer with these parameters and return the output of `get_config`: 
 
@@ -121,9 +121,9 @@ The goal of this exercice is to learn to create layers of neurons. Keras propose
     'bias_constraint': None}
     ```
 
-# Exercice 3 Architecture
+# Exercise 3 Architecture
 
-The goal of this exercice is to combine the layers and to create a neural network. 
+The goal of this exercise is to combine the layers and to create a neural network. 
 
 1. Create a neural network for regression with the following architecture and return `print(model.summary())`: 
 
@@ -145,9 +145,9 @@ The goal of this exercice is to combine the layers and to create a neural networ
     ```
 
 The first two layers could use another activation function that sigmoid (eg: relu)
-# Exercice 4 Optimize
+# Exercise 4 Optimize
 
-The goal of this exercice is to learn to train the neural network. Once the architecture of the neural network is set there are two steps to train the neural network: 
+The goal of this exercise is to learn to train the neural network. Once the architecture of the neural network is set there are two steps to train the neural network: 
 
 - `compile`:  The compilation step aims to set the loss function, to choose the algoithm to minimize the chosen loss function and to choose the metric the model outputs.
 

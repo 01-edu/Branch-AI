@@ -31,8 +31,8 @@ More details:
 https://towardsdatascience.com/understanding-logistic-regression-9b02c2aec102
 
 
-For the linear regression exercices, the loss (Mean Square Error - MSE) is minimized with an algorithm called **gradient descent**. In the classification, the loss MSE  can't be used because the output of the model is 0 or 1 (for binary classfication). 
-The **logloss** or **cross entropy** is the loss used for classification. Similarly, it has some nice mathematical properties. The minimization of the **logloss** is not covered in the exercices. However, since it is used in most machine learning models for classification, I recommand to spend some time reading the related article. This article gives a nice example of how it works: 
+For the linear regression exercises, the loss (Mean Square Error - MSE) is minimized with an algorithm called **gradient descent**. In the classification, the loss MSE  can't be used because the output of the model is 0 or 1 (for binary classfication). 
+The **logloss** or **cross entropy** is the loss used for classification. Similarly, it has some nice mathematical properties. The minimization of the **logloss** is not covered in the exercises. However, since it is used in most machine learning models for classification, I recommand to spend some time reading the related article. This article gives a nice example of how it works: 
 
 https://towardsdatascience.com/cross-entropy-for-classification-d98e7f974451
 
@@ -48,9 +48,9 @@ https://medium.com/swlh/what-is-logistic-regression-62807de62efa
 
 
 
-# Exercice 1 Logistic regression in Scikit-learn 
+# Exercise 1 Logistic regression in Scikit-learn 
 
-The goal of this exercice is to learn to use Scikit-learn to classify data. 
+The goal of this exercise is to learn to use Scikit-learn to classify data. 
 ```
 X = [[0],[0.1],[0.2], [1],[1.1],[1.2], [1.3]]
 y = [0,0,0,1,1,1,0]
@@ -93,9 +93,9 @@ Score:
 
 ```
 
-# Exercice 2 Sigmoid
+# Exercise 2 Sigmoid
 
-The goal of this exercice is to learn to compute and plot the sigmoid function. 
+The goal of this exercise is to learn to compute and plot the sigmoid function. 
 
 1. On the same plot, plot the sigmoid function and the custom sigmoids defined as:
 ```
@@ -121,9 +121,9 @@ The plot should look like this:
 
 
 
-# Exercice 3 Decision boundary
+# Exercise 3 Decision boundary
 
-The goal of this exercice is to learn to fit a logistic regression on simple examples and to understand how the algorithm separated the data from the different classes.  
+The goal of this exercise is to learn to fit a logistic regression on simple examples and to understand how the algorithm separated the data from the different classes.  
 
 ## 1 dimension 
 
@@ -304,9 +304,9 @@ As mentioned, it is not required to shift the class prediction to make the plot 
 
 
 
-# Exercice 4: Train test split
+# Exercise 4: Train test split
 
-The goal of this exercice is to learn to split a classification data set. The idea is the same as splitting a regression data set but there's one important detail specific to the classification: the proportion of each class in the train set and test set.  
+The goal of this exercise is to learn to split a classification data set. The idea is the same as splitting a regression data set but there's one important detail specific to the classification: the proportion of each class in the train set and test set.  
 
 
 
@@ -358,9 +358,9 @@ The proportion of class `1` is **0.125** in the train set and **1.** in the test
 2. This question is validated if the proportion of class `1` is **0.3** for both sets. 
 
 
-# Exercice 5 Breast Cancer prediction
+# Exercise 5 Breast Cancer prediction
 
-The goal of this exercice is to use Logistic Regression 
+The goal of this exercise is to use Logistic Regression 
 to predict breast cancer. It is always important to understand the data before training any Machine Learning algorithm. The data is described in **breast-cancer-wisconsin.names**. I suggest to add manually the column names in the DataFrame. 
 
 Preliminary:  
@@ -439,9 +439,9 @@ array([[90,  2],
 As said, for some reasons, you may have slighty different results because of the data splitting. However, the values you have in the confusion matrix should be close to these results. 
 
 
-# Exercice 6 Multi-class (Optional)
+# Exercise 6 Multi-class (Optional)
 
-The goal of this exercice is to learn to train a classfication algorithm on a multi-class labelled data. 
+The goal of this exercise is to learn to train a classfication algorithm on a multi-class labelled data. 
 Some algorithms as SVM or Logistic Regression do not natively support multi-class (more than 2 classes). There are some approaches that allow to use these algorithms on multi-class data. 
 Let's assume we work with 3 classes: A, B and C. 
 

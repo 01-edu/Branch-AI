@@ -35,9 +35,9 @@ This object takes as input the preprocessing transforms and a Machine Learning m
 ## Ressources 
 TODO
 
-# Exercice 1 Imputer 1
+# Exercise 1 Imputer 1
 
-The goal of this exercice is to learn how to use an Imputer to fill missing values on basic example.
+The goal of this exercise is to learn how to use an Imputer to fill missing values on basic example.
 
 ```
 train_data = [[7, 6, 5], 
@@ -84,11 +84,11 @@ test_data = [[np.nan, 1, 2],
         [ 4.,  2.,  4.]])
     ```
 
-# Exercice 2 Scaler
+# Exercise 2 Scaler
 
-The goal of this exercice is to learn to scale a data set. There are various scaling techniques, we will focus on `StandardScaler` from scikit learn. 
+The goal of this exercise is to learn to scale a data set. There are various scaling techniques, we will focus on `StandardScaler` from scikit learn. 
 
-We will use a tiny data set for this exercice that we will generate by ourselves: 
+We will use a tiny data set for this exercise that we will generate by ourselves: 
 
 ``` 
 X_train = np.array([[ 1., -1.,  2.],
@@ -140,8 +140,8 @@ array([[ 1.22474487, -1.22474487,  0.53452248],
        [ 0.        ,  1.22474487,  0.53452248]])
 
 ```
-# Exercice 3 One hot Encoder 
-The goal of this exercice is to learn how to deal with Categorical variables using the OneHot Encoder. 
+# Exercise 3 One hot Encoder 
+The goal of this exercise is to learn how to deal with Categorical variables using the OneHot Encoder. 
 
 ```
 X_train = [['Python'], ['Java'], ['Java'], ['C++']]
@@ -199,8 +199,8 @@ https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.OneHotEn
 
 
 
-# Exercice 4 Ordinal Encoder
-The goal of this exercice is to learn how to deal with Categorical variables using the Ordinal Encoder. 
+# Exercise 4 Ordinal Encoder
+The goal of this exercise is to learn how to deal with Categorical variables using the Ordinal Encoder. 
 
 In that case, we want the model to consider that: **good > neutral > bad**
 
@@ -242,9 +242,9 @@ array([[2.],
 
 
 
-# Exercice 5 Categorical variables 
+# Exercise 5 Categorical variables 
 
-The goal of this exercice is to learn how to deal with Categorical variables with Ordinal Encoder, Label Encoder and OneHot Encoder. 
+The goal of this exercise is to learn how to deal with Categorical variables with Ordinal Encoder, Label Encoder and OneHot Encoder. 
 
 Preliminary:
 - Load the breast-cancer.csv file
@@ -359,7 +359,7 @@ AttributeError: Transformer ordinalencoder (type OrdinalEncoder) does not provid
 
 ```
 
-**It means that if you want to use the Ordinal Encoder, you will have to create a variable that contains the columns name in the right order. This step is not required in that exercice** 
+**It means that if you want to use the Ordinal Encoder, you will have to create a variable that contains the columns name in the right order. This step is not required in that exercise** 
 
 
 
@@ -438,9 +438,9 @@ array([[1., 0., 1., 0., 0., 1., 0., 0., 0., 1., 0., 1., 0., 2., 2., 0.,
 ```
 
 
-# Exercice 6 Pipeline 
+# Exercise 6 Pipeline 
 
-The goal of this exercice is to learn to use the Scikit-learn object: Pipeline. The data set: used for this exercice is the `iris` data set. 
+The goal of this exercise is to learn to use the Scikit-learn object: Pipeline. The data set: used for this exercise is the `iris` data set. 
 
 Preliminary:
 - Run the code below. 
@@ -513,9 +513,9 @@ On financial data set, the ratio signal to noise is low. Trying to forecast stoc
 
 
 
-# Exercice 1 Imputer 2
+# Exercise 1 Imputer 2
 
-The goal of this exercice is to learn how to use an Imputer to fill missing values in the data set. 
+The goal of this exercise is to learn how to use an Imputer to fill missing values in the data set. 
 
 **Reminder**: The data exploration should be done first. It tells which rows/variables should be removed because there are too many missing values. Then the remaining data points can be treated using an Imputer. 
 

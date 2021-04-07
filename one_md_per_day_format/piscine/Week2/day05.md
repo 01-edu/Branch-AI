@@ -6,12 +6,12 @@
 
 # Introduction
 
-If you finished yesterday's exercices you should be able to train several Machine Learning algorithms and to choose one returned by GridSearchCV.
+If you finished yesterday's exercises you should be able to train several Machine Learning algorithms and to choose one returned by GridSearchCV.
 GridSearchCV returns the model that gives the best score on the test set. Yesterday, as I told you, I changed the **cv** parameter to compute the GridSearch with a train set and a test set. 
 It means that the selected model is based on one single measure. What if, by luck, we predict correctly on that section ? What if the best model is bad ? What if I could have selected a better model ? 
 
 We will answer these questions today ! The topics we will cover are the one of the most important in Machine Learning. 
-Must read before to start the exercices: 
+Must read before to start the exercises: 
 
     - Biais-Variance trade off; aka Underfitting/Overfitting.
         -  https://machinelearningmastery.com/gentle-introduction-to-the-bias-variance-trade-off-in-machine-learning/
@@ -28,9 +28,9 @@ Must read before to start the exercices:
 ## Ressources 
 
 
-# Exercice 1: K-Fold
+# Exercise 1: K-Fold
 
-The goal of this exercice is to learn to use `KFold` to split the data set in a k-fold cross validation. Most of the time you won't use this function to split your data because this function is used by others as `cross_val_score` or `cross_validate` or `GridSearchCV` ... . But, this allows to understand the splitting and to create a custom one if needed.  
+The goal of this exercise is to learn to use `KFold` to split the data set in a k-fold cross validation. Most of the time you won't use this function to split your data because this function is used by others as `cross_val_score` or `cross_validate` or `GridSearchCV` ... . But, this allows to understand the splitting and to create a custom one if needed.  
 
 ```
 X = np.array(np.arange(1,21).reshape(10,-1))
@@ -81,9 +81,9 @@ y = np.array(np.arange(1,11))
 
     
 
-# Exercice 2: Cross validation (k-fold)
+# Exercise 2: Cross validation (k-fold)
 
-The goal of this exercice is to learn how to use cross validation. After reading the articles you should be able to explain why we need to cross-validate the models. We will firstly focus on Linear Regression to reduce the computation time. We will be using `cross_validate` to run the cross validation. Note that `cross_val_score` is similar bu the `cross_validate` calculates one or more scores and timings for each CV split.
+The goal of this exercise is to learn how to use cross validation. After reading the articles you should be able to explain why we need to cross-validate the models. We will firstly focus on Linear Regression to reduce the computation time. We will be using `cross_validate` to run the cross validation. Note that `cross_val_score` is similar bu the `cross_validate` calculates one or more scores and timings for each CV split.
 
 Preliminary: 
 
@@ -159,9 +159,9 @@ The model is consistent across folds: it is stable. That's a first sign that the
 
 
 
-# Exercice 3 GridsearchCV
+# Exercise 3 GridsearchCV
 
-The goal of this exercice is to learn to use GridSearchCV to run a grid search, predict on the test set and score on the test set. 
+The goal of this exercise is to learn to use GridSearchCV to run a grid search, predict on the test set and score on the test set. 
 
 Preliminary: 
 
@@ -250,13 +250,13 @@ WARNING: If the score used in classification is the AUC, there is one rare case 
 
     
 
-# Exercice 5 Validation curve and Learning curve 
+# Exercise 5 Validation curve and Learning curve 
 
-The goal of this exercice is to learn to analyse the models' performance with two tools:
+The goal of this exercise is to learn to analyse the models' performance with two tools:
 - Validation curve
 - Learning curve 
 
-For this exercice we will use a dataset of 100k data points to give you an idea of the computation time you can expect during projects. 
+For this exercise we will use a dataset of 100k data points to give you an idea of the computation time you can expect during projects. 
 
 Preliminary: 
 

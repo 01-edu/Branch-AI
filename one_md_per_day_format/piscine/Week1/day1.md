@@ -29,7 +29,7 @@ Save one notebook per day or one per exercise. Use markdown to divide your noteb
 - https://numpy.org/doc/
 - https://jakevdp.github.io/PythonDataScienceHandbook/
 
-# Exercice 1 Your first NumPy array
+# Exercise 1 Your first NumPy array
 
 The goal of this exercise is to use many Python data types in **NumPy** arrays. **NumPy** arrays are intensively used in **NumPy** and **Pandas**. They are flexible and allow to use optimized **NumPy** underlying functions.
 
@@ -71,7 +71,7 @@ for i in your_np_array:
 
 ---
 
-# Exercice 2 Zeros
+# Exercise 2 Zeros
 
 The goal of this exercise is to learn to create a NumPy array with 0s.
 
@@ -86,7 +86,7 @@ The goal of this exercise is to learn to create a NumPy array with 0s.
 
 ---
 
-# Exercice 3 Slicing
+# Exercise 3 Slicing
 
 The goal of this exercise is to learn NumPy indexing/slicing. It allows to access values of the NumPy array efficiently and without a for loop.
 
@@ -113,7 +113,7 @@ integers[mask] = 0
 
 ---
 
-# Exercice 4 Random
+# Exercise 4 Random
 
 The goal of this exercise is to learn to generate random data.
 In Data Science it is extremely useful to generate random data for many reasons:
@@ -174,7 +174,7 @@ For this exercise, as the results may change depending on the version of the pac
 
 ---
 
-# Exercice 5: Split, concatenate, reshape arrays
+# Exercise 5: Split, concatenate, reshape arrays
 
 The goal of this exercise is to learn to concatenate and reshape arrays.
 
@@ -214,7 +214,7 @@ https://jakevdp.github.io/PythonDataScienceHandbook/ (section: The Basics of Num
 
 ---
 
-# Exercice 6: Broadcasting and Slicing
+# Exercise 6: Broadcasting and Slicing
 
 The goal of this exercise is to learn to access values of n-dimensional arrays efficiently.
 
@@ -266,7 +266,7 @@ https://jakevdp.github.io/PythonDataScienceHandbook/ (section: Computation on Ar
 
 ---
 
-# Exercice 7: NaN
+# Exercise 7: NaN
 
 The goal of this exercise is to learn to deal with missing data in NumPy and to manipulate NumPy arrays.
 
@@ -323,7 +323,7 @@ This question is validated if, without having used a for loop or having filled t
 
 ---
 
-# Exercice 8: Wine
+# Exercise 8: Wine
 
 The goal of this exercise is to learn to perform a basic data analysis on real data using NumPy.
 
@@ -404,7 +404,7 @@ This can be done in three steps: Get the max, create a boolean mask that indicat
 
 ---
 
-## Exercice 9 Football tournament
+## Exercise 9 Football tournament
 
 The goal of this exercise is to learn to use permutations, complex
 

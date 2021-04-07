@@ -17,7 +17,7 @@ Not only is the Pandas library a central component of the data science toolkit b
 
 Pandas is built on top of the NumPy package, meaning a lot of the structure of NumPy is used or replicated in Pandas. Data in pandas is often used to feed statistical analysis in SciPy, plotting functions from Matplotlib, and machine learning algorithms in Scikit-learn.
 
-Most of the topics we will cover today are explained and describes with examples in the first ressource. The number of exercices is low on purpose: Take the time to understand the chapter 5 of the ressource, even if there are 40 pages. 
+Most of the topics we will cover today are explained and describes with examples in the first ressource. The number of exercises is low on purpose: Take the time to understand the chapter 5 of the ressource, even if there are 40 pages. 
 
 The version of Pandas I used is '1.0.1'.
 
@@ -41,9 +41,9 @@ https://pandas.pydata.org/Pandas_Cheat_Sheet.pdf
 https://www.learndatasci.com/tutorials/python-pandas-tutorial-complete-introduction-for-beginners/
 
 https://jakevdp.github.io/PythonDataScienceHandbook/03.04-missing-values.html
-# Exercice 1
+# Exercise 1
 
-The goal of this exercice is to learn to create basic Pandas objects. 
+The goal of this exercise is to learn to create basic Pandas objects. 
 
 1. Create a DataFrame as below this using two ways: 
     - From a NumPy array
@@ -82,9 +82,9 @@ and if the types of the first value of the columns are
 
 ```
 
-# Exercice 2  **Electric power consumption**
+# Exercise 2  **Electric power consumption**
 
-The goal of this exercice is to learn to manipulate real data with Pandas. 
+The goal of this exercise is to learn to manipulate real data with Pandas. 
 The data set used is **Individual household electric power consumption**
 
 1. Delete the columns `Time`, `Sub_metering_2` and `Sub_metering_3`
@@ -118,7 +118,7 @@ The data set used is **Individual household electric power consumption**
 
 ## Correction: 
 
-1. `del` works but it is not a solution I recommand. For this exercice it is accepted. It is expected to use `drop` with `axis=1`. `inplace=True` may be useful to avoid to affect the result to a variable. 
+1. `del` works but it is not a solution I recommand. For this exercise it is accepted. It is expected to use `drop` with `axis=1`. `inplace=True` may be useful to avoid to affect the result to a variable. 
 
 2. The prefered solution is `set_index` with `inplace=True`. As long as the DataFrame returns the output below, the solution is accepted. If the type of the index is not `dtype='datetime64[ns]'` the solution is not accepted. 
 
@@ -219,9 +219,9 @@ The data set used is **Individual household electric power consumption**
 
 
 
-# Exercice 3: E-commerce purchases 
+# Exercise 3: E-commerce purchases 
 
-The goal of this exercice is to learn to manipulate real data with Pandas. This exercice is less guided since the exercice 2 should have given you a nice introduction. 
+The goal of this exercise is to learn to manipulate real data with Pandas. This exercise is less guided since the exercise 2 should have given you a nice introduction. 
 
 The data set used is **E-commerce purchases**. 
 
@@ -240,7 +240,7 @@ Questions:
 12. What are the top 5 most popular email providers/hosts (e.g. gmail.com, yahoo.com, etc...)
 
 ## Correction
-The validate this exercice all answers should return the expected numerical value given in the correction AND uses Pandas. For example using NumPy to compute the mean doesn't respect the philosophy of the exercice which is to use Pandas. 
+The validate this exercise all answers should return the expected numerical value given in the correction AND uses Pandas. For example using NumPy to compute the mean doesn't respect the philosophy of the exercise which is to use Pandas. 
 
 1. How many rows and columns are there?**10000 entries**
 
@@ -303,9 +303,9 @@ The validate this exercice all answers should return the expected numerical valu
 
     The prefered solution is based on the usage of `apply` on a `lambda` function that slices the string that contains the email. The `lambda` function uses `split` to split the string on `@`. Finally, `value_counts` is used to count the occurences. 
 
-# Exercice 3 Handling missing values
+# Exercise 3 Handling missing values
 
-The goal of this exercice is to learn to handle missing values. In the previsous exercice we used the first techniques: filter out the missing values. We were lucky because the proportion of missing values was low. But in some cases, dropping the missing values is not possible because the filtered data set would be too small. 
+The goal of this exercise is to learn to handle missing values. In the previsous exercise we used the first techniques: filter out the missing values. We were lucky because the proportion of missing values was low. But in some cases, dropping the missing values is not possible because the filtered data set would be too small. 
 This article explains the different types of missing data and how they should be handled. https://towardsdatascience.com/data-cleaning-with-python-and-pandas-detecting-missing-values-3e9c6ebcf78b
 
 "
@@ -327,7 +327,7 @@ This article explains the different types of missing data and how they should be
 
 ## Correction
 
-To validate the exercice, you should have done these two steps in that order:
+To validate the exercise, you should have done these two steps in that order:
 - Convert the numerical columns to `float` 
 
     ```
