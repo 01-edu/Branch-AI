@@ -33,9 +33,9 @@ https://jakevdp.github.io/PythonDataScienceHandbook/05.13-kernel-density-estimat
 
 
 
-# Exercice 1 Pandas plot 1
+# Exercise 1 Pandas plot 1
 
-The goal of this exercice is to learn to create plots with use Pandas. Panda's `.plot()` is a wrapper for `matplotlib.pyplot.plot()`. 
+The goal of this exercise is to learn to create plots with use Pandas. Panda's `.plot()` is a wrapper for `matplotlib.pyplot.plot()`. 
 
 Here is the data we will be using: 
 
@@ -69,9 +69,9 @@ The plot has to contain:
 [logo]: images/day03/w1day03_ex1_plot1.png "Bar plot ex1"
 
 
-## Exercice 2: Pandas plot 2
+## Exercise 2: Pandas plot 2
 
-The goal of this exercice is to learn to create plots with use Pandas. Panda's `.plot()` is a wrapper for `matplotlib.pyplot.plot()`. 
+The goal of this exercise is to learn to create plots with use Pandas. Panda's `.plot()` is a wrapper for `matplotlib.pyplot.plot()`. 
 
 
 ```
@@ -108,7 +108,7 @@ You should also observe that  the older people are the bigger the number of chil
 
 
 
-## Exercice 3 Matplotlib 1
+## Exercise 3 Matplotlib 1
 
 The goal of this plot is to learn to use Matplotlib to plot data. As you know, Matplotlib is the underlying library used by Pandas. It provides more options to plot custom visualizations. Howerver, most of the plots we will create with Matplotlib can be reproduced with Pandas' `.plot()`. 
 
@@ -145,7 +145,7 @@ The plot has to contain:
 
 [logo_ex3]: images/day03/w1day03_ex3_plot1.png "Scatter plot ex3"
 
-# Exercice 4 Matplotlib 2
+# Exercise 4 Matplotlib 2
 The goal of this plot is to learn to use Matplotlib to plot different lines in the same plot on different axis using `twinx`. This very useful to compare variables in different ranges. 
 
 Here is the data: 
@@ -187,7 +187,7 @@ The plot has to contain:
 
 https://matplotlib.org/gallery/api/two_scales.html
 
-# Exercice 5 Matplotlib subplots
+# Exercise 5 Matplotlib subplots
 The goal of this exerice is to learn to use Matplotlib to create subplots. 
 
 1. Reproduce this plot using a **for loop**: 
@@ -224,14 +224,14 @@ The plot has to contain:
 
 Check that the plot has been created with a for loop. 
 
-# Exercice 6 Plotly 1
+# Exercise 6 Plotly 1
 Plotly has evolved a lot in the previous years. It is important to **always check the documentation**. 
 
 Plotly comes with a high level interface: Plotly Express. It helps building some complex plots easily. The lesson won't detail the complex examples. Plotly express is quite interesting while using Pandas Dataframes because there are some built-in functions that leverage Pandas Dataframes. 
 
 The plot outputed by Plotly is interactive and can also be dynamic. 
 
-The goal of the exercice is to plot the price of a company. Its price is generated below. 
+The goal of the exercise is to plot the price of a company. Its price is generated below. 
 
 ```
 returns = np.random.randn(50)
@@ -284,9 +284,9 @@ The plot has to contain:
 
 [logo_ex6]: images/day03/w1day03_ex6_plot1.png "Time series ex6"
 
-# Exercice 7 Plotly Box plots
+# Exercise 7 Plotly Box plots
 
-The goal of this exercice is to learn to use Plotly to plot Box Plots. It is t is a method for graphically depicting groups of numerical data through their quartiles and values as min, max. It allows to compare quickly some variables. 
+The goal of this exercise is to learn to use Plotly to plot Box Plots. It is t is a method for graphically depicting groups of numerical data through their quartiles and values as min, max. It allows to compare quickly some variables. 
 
 Let us generate 3 random arrays from a normal distribution. And for each array add respectively 1, 2 to the normal distribution. 
 
@@ -295,7 +295,7 @@ y0 = np.random.randn(50)
 y1 = np.random.randn(50) + 1 # shift mean
 y2 = np.random.randn(50) + 2
 ```
-1. Plot in the same Figure 2 box plots as shown in the image. In this exercice the style is not important. 
+1. Plot in the same Figure 2 box plots as shown in the image. In this exercise the style is not important. 
 
 ![alt text][logo_ex7]
 

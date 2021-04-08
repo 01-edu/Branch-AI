@@ -23,9 +23,9 @@ https://srnghn.medium.com/deep-learning-overview-of-neurons-and-activation-funct
 Reproduire cet article sans back prop 
 https://towardsdatascience.com/machine-learning-for-beginners-an-introduction-to-neural-networks-d49f22d238f9
 
-# Exercice 1 The neuron 
+# Exercise 1 The neuron 
 
-The goal of this exercice is to understand the role of a neuron and to implement a neuron. 
+The goal of this exercise is to understand the role of a neuron and to implement a neuron. 
 
 An artificial neuron, the basic unit of the neural network, (also referred to as a perceptron) is a mathematical function. It takes one or more inputs that are multiplied by values called “weights” and added together. This value is then passed to a non-linear function, known as an activation function, to become the neuron’s output.
 
@@ -91,7 +91,7 @@ https://victorzhou.com/blog/intro-to-neural-networks/
 
 # Exerice 2 Neural network
 
-The goal of this exercice is to understand how to combine three neurons to form a neural network. A neural newtwork is nothing else than neurons connected together. As shown in the figure the neural network is composed of **layers**:
+The goal of this exercise is to understand how to combine three neurons to form a neural network. A neural newtwork is nothing else than neurons connected together. As shown in the figure the neural network is composed of **layers**:
 
   - Input layer: it only represents input data. **It doesn't contain neurons**.
   - Output layer: it represents the last layer. It contains a neuron (in some cases more than 1).
@@ -99,7 +99,7 @@ The goal of this exercice is to understand how to combine three neurons to form 
 
 Notice that the neuron **o1** in the output layer takes as input the output of the neurons **h1** and **h2** in the hidden layer. 
 
-In exercice 1, you implemented this neuron.
+In exercise 1, you implemented this neuron.
 ![alt text][neuron]
 
 [neuron]: images/day1/ex2/w3_day1_neuron.png "Plot"
@@ -143,9 +143,9 @@ Now, we add two more neurons:
 
 1. This question is validated the output is: **0.9524917424084265**
 
-# Exercice 3 Log loss
+# Exercise 3 Log loss
 
-The goal of this exercice is to implement the Log loss function. As mentioned last week, this function is used in classification as a **loss function**. It means that the better the classifier is, the smaller the loss function is. W2D1, you implemented the gradient descent on the MSE loss to update the weights of the linear regression. Similarly, the minimization of the Log loss leads to finding optimal weights. 
+The goal of this exercise is to implement the Log loss function. As mentioned last week, this function is used in classification as a **loss function**. It means that the better the classifier is, the smaller the loss function is. W2D1, you implemented the gradient descent on the MSE loss to update the weights of the linear regression. Similarly, the minimization of the Log loss leads to finding optimal weights. 
 
 Log loss: - 1/n * Sum[(y_true*log(y_pred) + (1-y_true)*log(1-y_pred))]
 
@@ -163,7 +163,7 @@ https://scikit-learn.org/stable/modules/generated/sklearn.metrics.log_loss.html
 1. This question is validated if the output is: **0.5472899351247816**.
 
 
-# Exercice 4 Forward propagation
+# Exercise 4 Forward propagation
 The goal of this exerice is to compute the log loss on the output of the forward propagation. The data used is the tiny data set below. 
 
 
@@ -198,9 +198,9 @@ The goal if the network is to predict the success at the exam given math and che
 2. This question is validated if the logloss for the 4 students is **0.5485133607757963**.
 
 
-# Exercice 5 Regression 
+# Exercise 5 Regression 
 
-The goal of this exercice is to learn to adapt the output layer to regression. 
+The goal of this exercise is to learn to adapt the output layer to regression. 
 As a reminder, one of reasons for which the sigmoid is used in classification is because it contracts the output between 0 and 1 which is the expected output range for a probability (W2D2: Logistic regression). However, the output of the regression is not a probability. 
 
 In order to perform a regression using a neural network, the activation function of the neuron on the output layer has to be modified to **identity function**. In mathematics, the identity function is: **f(x) = x**. In other words it means that it returns the input as so. The three steps become: 
@@ -218,7 +218,7 @@ In order to perform a regression using a neural network, the activation function
 
 All other neurons' activation function **doesn't change**.
 
-1. Adapt the neuron class implemented in exercice 1. It now takes as a parameter `regression` which is boolean. When its value is `True`, `feedforward` should use the identity function as activation function instead of the sigmoid function. 
+1. Adapt the neuron class implemented in exercise 1. It now takes as a parameter `regression` which is boolean. When its value is `True`, `feedforward` should use the identity function as activation function instead of the sigmoid function. 
 
 
     ```

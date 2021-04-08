@@ -25,9 +25,9 @@ https://towardsdatascience.com/different-ways-to-iterate-over-rows-in-a-pandas-d
 
 
 
-# Exercice 1 Concatenate
+# Exercise 1 Concatenate
 
-The goal of this exercice is to learn to concatenate DataFrames. The logic is the same for the Series.
+The goal of this exercise is to learn to concatenate DataFrames. The logic is the same for the Series.
 
 Here are the two DataFrames to concatenate:
 
@@ -55,9 +55,9 @@ df2 = pd.DataFrame([['c', 1], ['d', 2]],
     |  3 | d        |        2 |
 
 
-# Exercice 2 Merge
+# Exercise 2 Merge
 
-The goal of this exercice is to learn to merge DataFrames
+The goal of this exercise is to learn to merge DataFrames
 The logic of merging DataFrames in Pandas is quite similar as the one used in SQL. 
 
 Here are the two DataFrames to merge:
@@ -125,9 +125,9 @@ df2 = pd.DataFrame(df2_dict, columns = ['id', 'Feature1', 'Feature2'])
     Note: Check that the suffixes are set using the suffix parameters rather than manually changing the columns' name. 
 
 
-## Exercice 3 Merge MultiIndex
+## Exercise 3 Merge MultiIndex
 
-The goal of this exercice is to learn to merge DataFrames with MultiIndex. 
+The goal of this exercise is to learn to merge DataFrames with MultiIndex. 
 Use the code below to generate the DataFrames. `market_data` contains fake market data. In finance, the market is available during the trading days (business days). `alternative_data` contains fake alternative data from social media. This data is available every day. But, for some reasons the Data Engineer lost the last 15 days of alternative data. 
 
 1. Using `market_data` as the reference, merge `alternative_data` on `market_data`
@@ -182,9 +182,9 @@ One of the answers that returns the correct DataFrame is:
 2. This question is validated if the number of missing in the DataFrame is equal to 0 and if `filled_df.sum().sum() == merged_df.sum().sum()` gives: `True`
 
 
-# Exercice 4 Groupby Apply
+# Exercise 4 Groupby Apply
 
-The goal of this exercice is to learn to group the data and apply a function on the groups. 
+The goal of this exercise is to learn to group the data and apply a function on the groups. 
 The use case we will work on is computing 
 
 1. Create a function that uses `pandas.DataFrame.clip` and that replace extreme values by a given percentile. The values that are greater than the upper percentile 80% are replaced by the percentile 80%. The values that are smaller than the lower percentile 20% are replaced by the percentile 20%. This process that correct outliers is called **winsorizing**. 
@@ -251,7 +251,7 @@ I recommend to use NumPy to compute the percentiles to make sure we used the sam
 
 
 ## Correction
-The for loop is forbidden in this exercice. The goal is to use `groupby` and `apply`. 
+The for loop is forbidden in this exercise. The goal is to use `groupby` and `apply`. 
 
 1.  This question is validated if the output is:
 
@@ -315,9 +315,9 @@ https://towardsdatascience.com/how-to-use-the-split-apply-combine-strategy-in-pa
 
 
 
-# Exercice 5 Groupby Agg
+# Exercise 5 Groupby Agg
 
-The goal of this exercice is to learn to compute different type of agregations on the groups. This small DataFrame contains products and prices. 
+The goal of this exercise is to learn to compute different type of agregations on the groups. This small DataFrame contains products and prices. 
 
 |    |   value | product      |
 |---:|--------:|:-------------|
@@ -353,9 +353,9 @@ Note: The columns don't have to be MultiIndex
 
 My answer is: `df.groupby('product').agg({'value':['min','max','mean']})`
 
-# Exercice 6 Unstack 
+# Exercise 6 Unstack 
 
-The goal of this exercice is to learn to unstack a MultiIndex. 
+The goal of this exercise is to learn to unstack a MultiIndex. 
 Let's assume we trained a machine learning model that predicts a daily score on the companies (tickers) below. It may be very useful to unstack the MultiIndex: plot the time series, vectorize the backtest etc ... 
 
 ```

@@ -51,9 +51,9 @@ https://scikit-learn.org/stable/tutorial/index.html
 - https://developers.google.com/machine-learning/crash-course/training-and-test-sets/video-lecture?hl=en
 
 
-# Exercice 1 Scikit-learn estimator
+# Exercise 1 Scikit-learn estimator
 
-The goal of this exercice is to learn to fit a Scikit-learn estimator and use it to predict. 
+The goal of this exercise is to learn to fit a Scikit-learn estimator and use it to predict. 
 
 ```
 
@@ -92,9 +92,9 @@ X, y = [[1],[2.1],[3]], [[1],[2],[3]]
     ```
 
 
-# Exercice 2 Linear regression in 1D
+# Exercise 2 Linear regression in 1D
 
-The goal of this exercice is to understand how the linear regression works in one dimension. To do so, we will generate a data in one dimension. Using `make regression` from Scikit-learn, generate a data set with 100 observations:
+The goal of this exercise is to understand how the linear regression works in one dimension. To do so, we will generate a data in one dimension. Using `make regression` from Scikit-learn, generate a data set with 100 observations:
 
     ```
     X, y, coef = make_regression(n_samples=100,
@@ -162,9 +162,9 @@ array([ 83.86186727, 140.80961751, 116.3333897 ,  64.52998689,
 
 6. This question is validated if the MSE returned is `2854.2871542048706`
 
-# Exercice 3: Train test split
+# Exercise 3: Train test split
 
-The goal of this exercice is to learn to split a data set. It is important to understand why we split the data in two sets. To put it in a nutshell: the Machine Learning algorithms learns on the training data and is evaluated on the that it hasn't seen before: the testing data. 
+The goal of this exercise is to learn to split a data set. It is important to understand why we split the data in two sets. To put it in a nutshell: the Machine Learning algorithms learns on the training data and is evaluated on the that it hasn't seen before: the testing data. 
 
 This video gives a basic and nice explanation: https://www.youtube.com/watch?v=_vdMKioCXqQ
 
@@ -208,10 +208,10 @@ y_test:
  [ 9 10]
 ```
 
-# Exercice 4 Forecast diabetes progression
+# Exercise 4 Forecast diabetes progression
 
 
-The goal of this exercice is to use Linear Regression to forecast the progression of diabetes. It will not always be precised, you should **ALWAYS** start doing an exploratory data analysis in order to have a good understanding of the data you model. As a reminder here an introduction to EDA:
+The goal of this exercise is to use Linear Regression to forecast the progression of diabetes. It will not always be precised, you should **ALWAYS** start doing an exploratory data analysis in order to have a good understanding of the data you model. As a reminder here an introduction to EDA:
 https://towardsdatascience.com/exploratory-data-analysis-eda-a-practical-guide-and-template-for-structured-data-abfbf3ee3bd9
 
 The data set used is described in https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_diabetes.
@@ -300,11 +300,11 @@ https://scikit-learn.org/stable/datasets/toy_dataset.html#diabetes-dataset
 4. This question is validated if the mse on the **train set** is `2888.326888` and the mse on the **test set** is `2858.255153`.
 
 
-## Exercice 5 Gradient Descent
+## Exercise 5 Gradient Descent
 
-The goal of this exercice is to understand how the Linear Regression algorithm finds the optimal coefficients. 
+The goal of this exercise is to understand how the Linear Regression algorithm finds the optimal coefficients. 
 
-The goal is to fit a Linear Regression on a one dimensional features data **without using Scikit-learn**. Let's use the data set we generated for the exercice 1: 
+The goal is to fit a Linear Regression on a one dimensional features data **without using Scikit-learn**. Let's use the data set we generated for the exercise 1: 
 
 
     ```

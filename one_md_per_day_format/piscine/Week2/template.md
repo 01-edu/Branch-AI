@@ -16,21 +16,21 @@
 ## Ressources 
 
 
-# Exercice 1
+# Exercise 1
 
 
 
-# Exercice 2
+# Exercise 2
 
 
 
-# Exercice 3 
+# Exercise 3 
 
 
 
-# Exercice 4 
+# Exercise 4 
 
 
 
-# Exercice 5 
+# Exercise 5 
 

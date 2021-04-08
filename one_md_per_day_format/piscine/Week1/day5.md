@@ -31,9 +31,9 @@ https://pandas.pydata.org/Pandas_Cheat_Sheet.pdf
 https://www.learndatasci.com/tutorials/python-pandas-tutorial-complete-introduction-for-beginners/
 
 
-# Exercice 1
+# Exercise 1
 
-The goal of this exercice is to learn to manipulate time series in Pandas. 
+The goal of this exercise is to learn to manipulate time series in Pandas. 
 
 1. Create a `Series` named `integer_series`from 1st January 2010 to 31 December 2020. At each date is associated the number of days since 1st January 2010. It starts with 0.
 
@@ -79,9 +79,9 @@ The goal of this exercice is to learn to manipulate time series in Pandas.
     ```
     If the `NaN` values have been dropped the solution is also accepted. The solution uses `rolling().mean()`. 
 
-# Exercice 2
+# Exercise 2
 
-The goal of this exercice is to learn to use Pandas on Time Series an on Financial data. 
+The goal of this exercise is to learn to use Pandas on Time Series an on Financial data. 
 
 The data we will use is Apple stock. 
 
@@ -144,11 +144,11 @@ To get this result there are two ways: `resample` and `groupby`. There are two k
     Name: Open, Length: 10118, dtype: float64
     ```
     - The first way is to compute the return without for loop is to use `pct_change`
-    - The second way to compute the return without for loop is to implement the formula given in the exercice in a vectorized way. To get the value at `t-1` you can use `shift`
+    - The second way to compute the return without for loop is to implement the formula given in the exercise in a vectorized way. To get the value at `t-1` you can use `shift`
 
-# Exercice 3 Multi asset returns
+# Exercise 3 Multi asset returns
 
-The goal of this exercice is to learn to compute daily returns on a DataFrame that contains many assets (multi-assets). 
+The goal of this exercise is to learn to compute daily returns on a DataFrame that contains many assets (multi-assets). 
 
 ```
 business_dates = pd.bdate_range('2021-01-01', '2021-12-31')
@@ -187,9 +187,9 @@ Note: The data is generated randomly, the values you may have a different result
 The DataFrame contains random data. Make sure your output and the one returned by this code is based on the same DataFrame. 
 
 
-# Exercice 4 Backtest
+# Exercise 4 Backtest
 
-The goal of this exercice is to learn to perform a backtest in Pandas. A backtest is a tool that allows you to know how a strategy would have performed retrospectively using historical data. In this exercice we will focus on the backtesting tool and not on how to build the best strategy. 
+The goal of this exercise is to learn to perform a backtest in Pandas. A backtest is a tool that allows you to know how a strategy would have performed retrospectively using historical data. In this exercise we will focus on the backtesting tool and not on how to build the best strategy. 
 
 We will backtest a **long only** strategy on Apple Inc. Long only means that we only consider buying the stock. The input signal at date d says if the close price will increase at d+1. We assume that the input signal is available before the market closes. 
 
@@ -266,7 +266,7 @@ My results can be reproduced using: `np.random.seed = 2712`. Given the versions 
         Name: Daily_futur_returns, Length: 10118, dtype: float64
 
     ```
-    The answer is also accepted if the returns is computed  as in the exercice 2 and then shifted in the futur using `shift`, but I do not recommend this implementation as it adds missing values ! 
+    The answer is also accepted if the returns is computed  as in the exercise 2 and then shifted in the futur using `shift`, but I do not recommend this implementation as it adds missing values ! 
     An example of solution is:
 
 
