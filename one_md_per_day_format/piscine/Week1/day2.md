@@ -90,7 +90,7 @@ The data set used is **Individual household electric power consumption**
 3. Create a function that takes as input the DataFrame with the data set and returns a DataFrame with updated types:
 
     ```python
-        def update_types(df) -> DataFrame:
+        def update_types(df):
             #TODO
             return df
     ```
