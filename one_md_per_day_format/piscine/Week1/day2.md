@@ -97,16 +97,16 @@ The data set used is **Individual household electric power consumption**
 
 4. Use `describe` to have an overview on the data set
 5. Delete the rows with missing values
-6. Modify `Sub_metering_1` by multplying it by 0.06
+6. Modify `Sub_metering_1` by multiplying it by 0.06
 7. Select all the rows for which the Date is greater than 2008-12-27 and `Voltage` is greater than 242
 8. Print the 88888th row.
 9. What is the date for which the `Global_active_power` is maximal ?
 10. Sort the first three columns by descending order of `Global_active_power` and ascending order of `Voltage`.
 11. Compute the daily average of `Global_active_power`.
 
-## Correction:
+## Correction
 
-1. `del` works but it is not a solution I recommand. For this exercice it is accepted. It is expected to use `drop` with `axis=1`. `inplace=True` may be useful to avoid to affect the result to a variable.
+1. `del` works but it is not a solution I recommend. For this exercise it is accepted. It is expected to use `drop` with `axis=1`. `inplace=True` may be useful to avoid to affect the result to a variable.
 
 2. The preferred solution is `set_index` with `inplace=True`. As long as the DataFrame returns the output below, the solution is accepted. If the type of the index is not `dtype='datetime64[ns]'` the solution is not accepted.
 
