@@ -97,8 +97,8 @@ The data set used is **Individual household electric power consumption**
 
 4. Use `describe` to have an overview on the data set
 5. Delete the rows with missing values
-6. Modify `Sub_metering_1` by multiplying it by 0.06
-7. Select all the rows for which the Date is greater than 2008-12-27 and `Voltage` is greater than 242
+6. Modify `Sub_metering_1` by adding 1 to it and multiplying the total by 0.06. If x is a row the output is: (x+1)*0.06
+7. Select all the rows for which the Date is greater or equal than 2008-12-27 and `Voltage` is greater or equal than 242
 8. Print the 88888th row.
 9. What is the date for which the `Global_active_power` is maximal ?
 10. Sort the first three columns by descending order of `Global_active_power` and ascending order of `Voltage`.
@@ -140,8 +140,8 @@ The data set used is **Individual household electric power consumption**
 5. You should have noticed that 25979 rows contain missing values (for a total of 129895). `df.isna().sum()` allows to check the number of missing values and `df.dropna()` with `inplace=True`. The solution is accepted if you used `dropna` and have the number of missing values as 0.
 
 6. Two solutions are accepted:
-    - `df.loc[:,'A'] = df['A'] * 0.06`
-    - Using `apply` and `df.loc[:,'A']` = 
+    - `df.loc[:,'A'] = (df['A'] + 1) * 0.06`
+    - Using `apply`:  `df.loc[:,'A'] = df.loc[:,'A'].apply(lambda x: (x+1)*0.06)`
 
     You may wonder `df.loc[:,'A']` is required and if `df['A'] = ...` works too. The answer is no. This is important in Pandas. Depending on the version of Pandas, it may return a warning. The reason is that you are affecting a value to a **copy** of the DataFrame and not in the DataFrame.
     More details: https://stackoverflow.com/questions/20625582/how-to-deal-with-settingwithcopywarning-in-pandas
@@ -225,7 +225,7 @@ Questions:
 
 The validate this exercise all answers should return the expected numerical value given in the correction AND uses Pandas. For example using NumPy to compute the mean doesn't respect the philosophy of the exercise which is to use Pandas.
 
-1. How many rows and columns are there?**10000 entries**
+1. How many rows and columns are there?**10000 entries** and **14 columns**
 
     There many solutions based on: shape, info, describe
 
@@ -296,9 +296,9 @@ https://towardsdatascience.com/data-cleaning-with-python-and-pandas-detecting-mi
 
 "**It’s important to understand these different types of missing data from a statistics point of view. The type of missing data will influence how you deal with filling in the missing values.**"
 
-1. Drop the `flower` column
+- Preliminary: Drop the `flower` column
 
-- Fill the missing values with a different "strategy" for each column:
+1. Fill the missing values with a different "strategy" for each column:
 
     `sepal_length` -> `mean`
 
@@ -306,13 +306,17 @@ https://towardsdatascience.com/data-cleaning-with-python-and-pandas-detecting-mi
 
     `petal_length`, `petal_width` -> `0`
 
-2. Explain why filling the missing values with 0 or the mean is a bad idea
+2. Fill the missing values using the median of the associated column using `fillna`.
 
-3. Fill the missing values using the median
+
+- Bonus questions: 
+    - Filling the missing values by 0 or the mean of the associated column is common in Data Science. In that case, explain why filling the missing values with 0 or the mean is a bad idea.
+    - Find a special row ;-)
+
 
 ## Correction
 
-To validate the exercise, you should have done these two steps in that order:
+1. This question is validated if you have  done these two steps in that order:
 
 - Convert the numerical columns to `float`
 
@@ -333,6 +337,11 @@ To validate the exercise, you should have done these two steps in that order:
     4:0})
     ```
 
+
+2. This question is validated if the solution is: `df.loc[:,col].fillna(df[col].median())`
+
+**Bonus questions**:
+
 - It is important to understand why filling the missing values with 0 or the mean of the column is a bad idea.
 
 |       |   sepal_length |   sepal_width |   petal_length |   petal_width |
@@ -347,17 +356,9 @@ To validate the exercise, you should have done these two steps in that order:
 | max   |      6900      |     3809      |      1400      |     1600      |
 
 Once we filled the missing values as suggested in the first question, `df.describe()` returns this interesting summary. We notice that the mean is way higher than the median. It means that there are maybe some outliers in the data. The quantile 75 and the max confirm that: 75% of the flowers have a sepal length smaller than 6.4 cm, but the max is 6900 cm. If you check on the internet you realise this small flower can't be that big. The outliers have a major impact on the mean which equals to 56.9. Filling this value for the missing value is not correct since it doesn't correspond to the real size of this flower. That is why in that case the best strategy to fill the missing values is the median. The truth is that I modified the data set ! But real data sets ALWAYS contains outliers.
-
-Bonus:
+Always think about the meaning of the data transformation ! If you fill the missing values by zero, it means that you consider that the length or width of some flowers may be 0. It doesn't make sense. 
 
 - If you noticed that there are some negative values and the huge values, you will be a good data scientist. **YOU SHOULD ALWAYS TRY TO UNDERSTAND YOUR DATA**. Print the row with index 122 ;-)
 
 This week, we will have the opportunity to focus on the data pre-processing to understand how the outliers are handled.
 
-EXos à ajouter:
-
-Créer une Series
-train_test_split
-Ajouter 3 exos sur les fontions natives incontournable de Pandas
-
-dropna
