@@ -137,7 +137,7 @@ The data set used is **Individual household electric power consumption**
 
 4. `df.describe()` is expected
 
-5. You should have noticed that 25979 rows contain missing values (for a total of 129895). `df.isna().sum()` allows to check the number of missing values and `df.dropna()` with `inplace=True`. The solution is accepted if you used `dropna` and have the number of missing values as 0.
+5. You should have noticed that 25979 rows contain missing values (for a total of 129895). `df.isna().sum()` allows to check the number of missing values and `df.dropna()` with `inplace=True` allows to remove the rows with missing values. The solution is accepted if you used `dropna` and have the number of missing values as 0.
 
 6. Two solutions are accepted:
     - `df.loc[:,'A'] = (df['A'] + 1) * 0.06`
