@@ -77,8 +77,8 @@ The goal of this exercise is to learn to create plots with use Pandas. Panda's `
         'age':[70,30,22,19,45,33,20],
         'gender':['M','F','F','F','M','M','M'],
         'state':['california','dc','california','dc','california','new york','porto'],
-        'num_children':[2,0,0,3,8,1,4],
-        'num_pets':[5,1,0,5,2,2,3]
+        'num_children':[4,2,1,0,3,1,0],
+        'num_pets':[5,1,0,2,2,2,3]
         })
 ```
 
@@ -97,7 +97,7 @@ The plot has to contain:
 ## Correction
 
 1. This question is validated if the plot reproduces the plot in the image. It has to contain a title, an x-axis name and an y-axis name. 
-You should also observe that  the older people are the bigger the number of children is. 
+You should also observe that the older people are, the the more children they have. 
 
 ![alt text][logo_ex2]
 
