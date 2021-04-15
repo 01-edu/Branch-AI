@@ -163,7 +163,7 @@ array([ 83.86186727, 140.80961751, 116.3333897 ,  64.52998689,
 
 # Exercise 3: Train test split
 
-The goal of this exercise is to learn to split a data set. It is important to understand why we split the data in two sets. To put it in a nutshell: the Machine Learning algorithms learns on the training data and is evaluates on the data that hasn't seen before: the testing data.
+The goal of this exercise is to learn to split a data set. It is important to understand why we split the data in two sets. To put it in a nutshell: the Machine Learning model learns on the training data and evaluates on the data the model hasn't seen before: the testing data.
 
 This video gives a basic and nice explanation: https://www.youtube.com/watch?v=_vdMKioCXqQ
 
@@ -296,7 +296,7 @@ https://scikit-learn.org/stable/datasets/toy_dataset.html#diabetes-dataset
 
 4. This question is validated if the mse on the **train set** is `2888.326888` and the mse on the **test set** is `2858.255153`.
 
-## Exercise 5 Gradient Descent
+## Exercise 5 Gradient Descent - Optional
 
 The goal of this exercise is to understand how the Linear Regression algorithm finds the optimal coefficients.
 
