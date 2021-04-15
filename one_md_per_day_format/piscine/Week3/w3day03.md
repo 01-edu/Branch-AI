@@ -24,9 +24,9 @@ A developper
 https://machinelearningmastery.com/tutorial-first-neural-network-python-keras/
 
 
-# Exercice 1 Regression - Optimize 
+# Exercise 1 Regression - Optimize 
 
-The goal of this exercice is to learn to set up the optimization for a regression neural network. There's no code to run in that exercice. In W2D2E3, we implemented a neural network designed for regression. We will be using this neural network: 
+The goal of this exercise is to learn to set up the optimization for a regression neural network. There's no code to run in that exercise. In W2D2E3, we implemented a neural network designed for regression. We will be using this neural network: 
 
     ```
     model = keras.Sequential()
@@ -68,9 +68,9 @@ https://keras.io/api/losses/regression_losses/
 https://keras.io/api/metrics/regression_metrics/
 
 
-# Exercice 2 Regression example
+# Exercise 2 Regression example
 
-The goal of this exercice is to learn to train a neural network to perform a regression on a data set.
+The goal of this exercise is to learn to train a neural network to perform a regression on a data set.
 The data set is Auto MPG Dataset and the go is to build a model to predict the fuel efficiency of late-1970s and early 1980s automobiles. To do this, provide the model with a description of many automobiles from that time period. This description includes attributes like: cylinders, displacement, horsepower, and weight.
 
 https://www.tensorflow.org/tutorials/keras/regression
@@ -150,9 +150,9 @@ The output neuron has to be `Dense(1)` - by defaut the activation funtion is lin
 
 *Hint*: To get the score on the test set, `evaluate` could have been used: `model.evaluate(X_test_scaled, y_test)`. 
 
-# Exercice 3 Multi classification - Softmax
+# Exercise 3 Multi classification - Softmax
 
-The goal of this exercice is to learn to a neural network architecture for multi-class data. This is an important type of problem on which to practice with neural networks because the three class values require specialized handling. A multi-classification neural network uses as output layer a **softmax** layer. The **softmax** activation function is an extension of the sigmoid as it is designed to output the probabilities to belong to each class in a multi-class problem. This output layer has to contain as much neurons as classes in the multi-classification problem. This article explains in detail how it works. https://developers.google.com/machine-learning/crash-course/multi-class-neural-networks/softmax
+The goal of this exercise is to learn to a neural network architecture for multi-class data. This is an important type of problem on which to practice with neural networks because the three class values require specialized handling. A multi-classification neural network uses as output layer a **softmax** layer. The **softmax** activation function is an extension of the sigmoid as it is designed to output the probabilities to belong to each class in a multi-class problem. This output layer has to contain as much neurons as classes in the multi-classification problem. This article explains in detail how it works. https://developers.google.com/machine-learning/crash-course/multi-class-neural-networks/softmax
 
 Let us assume we want to classify images and we know they contain either apples, bears, candies, eggs or dogs (extension of the example in the link above). 
 
@@ -175,9 +175,9 @@ Let us assume we want to classify images and we know they contain either apples,
     model.add(Dense(5, activation= 'softmax'))
 
     ```
-# Exercice 4 Multi classification - Optimize 
+# Exercise 4 Multi classification - Optimize 
 
-The goal of this exercice is to learn to optimize a multi-classification neural network. As learnt previously, the loss function used in binary classification is the log loss - also called in Keras `binary_crossentropy`. This function is defined for binary classification and can be extended to multi-classfication. In Keras, the extended loss that supports multi-classification is `binary_crossentropy`. There's no code to run in that exercice.
+The goal of this exercise is to learn to optimize a multi-classification neural network. As learnt previously, the loss function used in binary classification is the log loss - also called in Keras `binary_crossentropy`. This function is defined for binary classification and can be extended to multi-classfication. In Keras, the extended loss that supports multi-classification is `binary_crossentropy`. There's no code to run in that exercise.
 
 1. Fill the chunk of code below in order to optimize the neural network defined in the previous exercise. Choose the adapted loss, adam as optimizer and the accuracy as metric.
 
@@ -196,9 +196,9 @@ model.compile(loss='categorical_crossentropy',
               metrics=['accuracy'])
 ```
 
-# Exercice 5 Multi classification example
+# Exercise 5 Multi classification example
 
-The goal of this exercice is to learn to use a neural network to classify a multiclass data set. The data set used is the Iris data set which allows to classify flower given basic features as flower's measurement. 
+The goal of this exercise is to learn to use a neural network to classify a multiclass data set. The data set used is the Iris data set which allows to classify flower given basic features as flower's measurement. 
 
 Preliminary: 
     - Split train test. Keep 20% for the test set. Use `random_state=1`. 
@@ -245,6 +245,6 @@ model.fit(X_train_sc, y_train_multi_class, epochs = 1000, batch_size=20)
 
 
 
-# Exercice 6 GridSearch
+# Exercise 6 GridSearch
 
 https://medium.com/@am.benatmane/keras-hyperparameter-tuning-using-sklearn-pipelines-grid-search-with-cross-validation-ccfc74b0ce9f

@@ -36,9 +36,9 @@ https://www.kdnuggets.com/2018/06/right-metric-evaluating-machine-learning-model
 https://scikit-learn.org/stable/modules/model_evaluation.html
 
 
-# Exercice 1 MSE Scikit-learn 
+# Exercise 1 MSE Scikit-learn 
 
-The goal of this exercice is to learn to use `sklearn.metrics` to compute the mean squared error (MSE). 
+The goal of this exercise is to learn to use `sklearn.metrics` to compute the mean squared error (MSE). 
 
 1. Compute the MSE using `sklearn.metrics` on `y_true` and `y_pred` below:
 
@@ -51,10 +51,10 @@ y_pred = [90, 48, 2, 2, -4]
 1.  This question is validated if the MSE outputted is **2.25**. 
 
 
-# Exercice 2 Accuracy Scikit-learn
+# Exercise 2 Accuracy Scikit-learn
 
 
-The goal of this exercice is to learn to use `sklearn.metrics` to compute the accuracy. 
+The goal of this exercise is to learn to use `sklearn.metrics` to compute the accuracy. 
 
 1. Compute the accuracy using `sklearn.metrics` on `y_true` and `y_pred` below:
 
@@ -68,9 +68,9 @@ y_true = [0, 0, 1, 1, 1, 1, 0]
 
 
 
-# Exercice 3 Regression 
+# Exercise 3 Regression 
 
-The goal of this exercice is to learn to evaluate a machine learning model using many regression metrics. 
+The goal of this exercise is to learn to evaluate a machine learning model using many regression metrics. 
 
 Preliminary: 
 
@@ -138,13 +138,13 @@ pipe.fit(X_train, y_train)
     MSE on the test set:  0.5537420654727396
 
     ```
-    This result shows that the model has slightly better results on the train set than the test set. That's frequent since it is easier to get a better grade on an exam we studied than an exam that is different from what was prepared. However, the results are not good: r2 ~ 0.3. Fitting non linear models as the Random Forest on this data may improve the results. That's the goal of the exercice 5. 
+    This result shows that the model has slightly better results on the train set than the test set. That's frequent since it is easier to get a better grade on an exam we studied than an exam that is different from what was prepared. However, the results are not good: r2 ~ 0.3. Fitting non linear models as the Random Forest on this data may improve the results. That's the goal of the exercise 5. 
 
 
 
-# Exercice 4 Classification
+# Exercise 4 Classification
 
-The goal of this exercice is to learn to evaluate a machine learning model using many classification metrics. 
+The goal of this exercise is to learn to evaluate a machine learning model using many classification metrics. 
 
 Preliminary: 
 
@@ -232,9 +232,9 @@ Having a 99% ROC AUC is not usual. The data set we used is easy to classify. On 
 
 
 
-# Exercice 5 Machine Learning models
+# Exercise 5 Machine Learning models
 
-The goal of this exercice is to have an overview of the existing Machine Learning models and to learn to call them from scikit learn. 
+The goal of this exercise is to have an overview of the existing Machine Learning models and to learn to call them from scikit learn. 
 We will focus on: 
 
 - SVM/ SVC
@@ -363,9 +363,9 @@ Take time to have basic understanding of the role of the basic hyperparameters a
 It is important to notice that the Decision Tree overfits very easily. It learns easily the training data but is not able to extrapolate on the test set. This algorithm is not used a lot. 
 However, Random Forest and Gradient Boosting propose a solid approach to correct the overfitting (in that case the parameters `max_depth` is set to None that is why the Random Forest overfits the data). These two algorithms are used intensively in Machine Learning Projets. 
 
-# Exercice 6 Grid Search 
+# Exercise 6 Grid Search 
 
-The goal of this exercice is to learn how to make an exhaustive search over specified parameter values for an estimator. This is very useful because the hyperparameters which are the paremeters of the model impact the performance of the model. 
+The goal of this exercise is to learn how to make an exhaustive search over specified parameter values for an estimator. This is very useful because the hyperparameters which are the paremeters of the model impact the performance of the model. 
 The scikit learn object that runs the Grid Search is called GridSearchCV. We will learn tomorrow about the cross validation. For now, let us set the parameter **cv** to `[(np.arange(18576), np.arange(18576,20640))]`. 
 This means that GridSearchCV splits the data set in a train and test set. 
 
@@ -450,7 +450,7 @@ Ressources:
 
         return gs.best_estimator_, gs.best_params_, gs.best_score_
     ```
-    In my case, the gridsearch parameters are not interesting. Even if I reduced the overfitting of the Random Forest, the score on the test is lower than the score on the test returned by the Gradient Boosting in the previous exercice without optimal parameters search. 
+    In my case, the gridsearch parameters are not interesting. Even if I reduced the overfitting of the Random Forest, the score on the test is lower than the score on the test returned by the Gradient Boosting in the previous exercise without optimal parameters search. 
 
 
 3. This question is validated if the code used is: 

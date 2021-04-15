@@ -29,12 +29,12 @@ Les packages NLTK and Spacy to do the preprocessing
 
 ## Ressources 
 
-# Exercice 1: Lowercase
+# Exercise 1: Lowercase
 
-The goal of this exercice is to learn to lowercase text data in Python. Note that if the volume of data is low the text data can be stored in a Pandas DataFrame or Series. But, when dealing with high volumes (high but not huge), using a Pandas DataFrame or Series is not efficient. Data structures as dictionaries or list are more adapted. 
+The goal of this exercise is to learn to lowercase text data in Python. Note that if the volume of data is low the text data can be stored in a Pandas DataFrame or Series. But, when dealing with high volumes (high but not huge), using a Pandas DataFrame or Series is not efficient. Data structures as dictionaries or list are more adapted. 
 
 ```
-list_ = ["This is my first NLP exercice", "wtf!!!!!"]
+list_ = ["This is my first NLP exercise", "wtf!!!!!"]
 series_data = pd.Series(list_, name='text')
 
 ```
@@ -46,21 +46,21 @@ Note: Do not change the text manually !
 
 1. This question is validated if the output is: 
     ```
-    0    this is my first nlp exercice
+    0    this is my first nlp exercise
     1                         wtf!!!!!
     Name: text, dtype: object
     ```
 
 2. This question is validated if the output is: 
     ```
-    0    THIS IS MY FIRST NLP EXERCICE
+    0    THIS IS MY FIRST NLP EXERCISE
     1                         WTF!!!!!
     Name: text, dtype: object
     ```
 
 # Exerice 2: Punctation
 
-The goal of this exerice is to learn to deal with punctuation. In Natural Language Processing, some basic approaches as Bag of Words (exercice X) model the text as an unordered combination of words. In that case the punctuation is not always useful as it doesn't add information to the model. That is why is removed. 
+The goal of this exerice is to learn to deal with punctuation. In Natural Language Processing, some basic approaches as Bag of Words (exercise X) model the text as an unordered combination of words. In that case the punctuation is not always useful as it doesn't add information to the model. That is why is removed. 
 
 1. Remove the punctuation from this sentence. All characters in !"#$%&'()*+,-./:;<=>?@[\]^_`{|}~ are considered as punctuation.
 
@@ -81,9 +81,9 @@ The goal of this exerice is to learn to deal with punctuation. In Natural Langua
 
     ```
 
-# Exercice 3 Tokenization
+# Exercise 3 Tokenization
 
-The goal of this exercice is to learn to tokenize as text. This step is important because it splits the text into token. A token could be a sentence or a word. 
+The goal of this exercise is to learn to tokenize as text. This step is important because it splits the text into token. A token could be a sentence or a word. 
 
 ```
 text = """Bitcoin is a cryptocurrency invented in 2008 by an unknown person or group of people using the name Satoshi Nakamoto. The currency began use in 2009 when its implementation was released as open-source software."""
@@ -152,13 +152,13 @@ https://www.analyticsvidhya.com/blog/2019/07/how-get-started-nlp-6-unique-ways-p
 
     ```
 
-# Exercice 4 Stop words
+# Exercise 4 Stop words
 
-The goal of this exercice is to learn to remove stop words with NLTK.  Stop words usually refers to the most common words in a language. For example: "and", "is", "a" are stop words and do not add information to a sentence. 
+The goal of this exercise is to learn to remove stop words with NLTK.  Stop words usually refers to the most common words in a language. For example: "and", "is", "a" are stop words and do not add information to a sentence. 
 
 ```
 text = """
-The goal of this exercice is to learn to remove stop words with NLTK.  Stop words usually refers to the most common words in a language.
+The goal of this exercise is to learn to remove stop words with NLTK.  Stop words usually refers to the most common words in a language.
 """
 ```
 1. Remove stop words from this sentence and return the list of work tokens without stop words. 
@@ -168,13 +168,13 @@ The goal of this exercice is to learn to remove stop words with NLTK.  Stop word
 
 1. This question is validated if, using NLTK, the ouptut is:
     ```
-    ['The', 'goal', 'exercice', 'learn', 'remove', 'stop', 'words', 'NLTK', '.', 'Stop', 'words', 'usually', 'refers', 'common', 'words', 'language', '.']
+    ['The', 'goal', 'exercise', 'learn', 'remove', 'stop', 'words', 'NLTK', '.', 'Stop', 'words', 'usually', 'refers', 'common', 'words', 'language', '.']
 
     ```
 
-# Exercice 5 Stemming
+# Exercise 5 Stemming
 
-The goal of this exercice is to learn to use stemming using NLTK. As explained in details in the article, stemming is the process of reducing inflection in words to their root forms such as mapping a group of words to the same stem even if the stem itself is not a valid word in the Language. 
+The goal of this exercise is to learn to use stemming using NLTK. As explained in details in the article, stemming is the process of reducing inflection in words to their root forms such as mapping a group of words to the same stem even if the stem itself is not a valid word in the Language. 
 
 Note: The output of a stemmer is a word that may not exist in the dictionnary. 
 
@@ -196,9 +196,9 @@ The interviewer interviews the president in an interview
     ```
 
 
-# Exercice 6: Text preprocessing
+# Exercise 6: Text preprocessing
 
-The goal of this exercice is to learn to create a function to prepocess and clean a text using NLTK. 
+The goal of this exercise is to learn to create a function to prepocess and clean a text using NLTK. 
 
 
 Put this text in a variable: 
@@ -267,22 +267,22 @@ https://towardsdatascience.com/nlp-preprocessing-with-nltk-3c04ee00edc0
 
 ```
 
-# Exercice 7: Bag of Word representation 
+# Exercise 7: Bag of Word representation 
 
 https://machinelearningmastery.com/gentle-introduction-bag-words-model/
 
-The goal of this exercice is to understand how to create a Bag of Word (BoW) model on a corpus of texts. More precesily we will create a labeled data set from textual data using a word count matrix. 
+The goal of this exercise is to understand how to create a Bag of Word (BoW) model on a corpus of texts. More precesily we will create a labeled data set from textual data using a word count matrix. 
 As explained in the ressource, the Bag of word reprensation makes the assumption that the order in which the words appear in a text doesn't matter. There are different types of Bag of words reprensations: 
 
 - Boolean: Each document is a boolean vector
 - Wordcount: Each document is a word count vector
-- TFIDF: Each document is a score vector. The score is detailed in the next exercice. 
+- TFIDF: Each document is a score vector. The score is detailed in the next exercise. 
 
 The data `tweets_train.txt` contains tweets labeled with a sentiment. It gives the positivity of a tweet. 
 
 Steps: 
 
-1. Preprocess the data using the function implemented in the previous exercice. And, using from `CountVectorizer` of scikitlearn with `max_features=500` compute the wordcount of the tweets. The output is a sparse matrix.
+1. Preprocess the data using the function implemented in the previous exercise. And, using from `CountVectorizer` of scikitlearn with `max_features=500` compute the wordcount of the tweets. The output is a sparse matrix.
 - Check the shape of the word count matrix
 - Set **max_features** to 500 of the initial size of the dictionnary. 
         

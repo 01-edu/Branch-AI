@@ -80,9 +80,10 @@ and if the types of the first value of the columns are
     <class 'float'>
 ```
 
-# Exercice 2  **Electric power consumption**
+# Exercise 2  **Electric power consumption**
 
 The goal of this exercise is to learn to manipulate real data with Pandas.
+
 The data set used is **Individual household electric power consumption**
 
 1. Delete the columns `Time`, `Sub_metering_2` and `Sub_metering_3`
@@ -223,7 +224,7 @@ Questions:
 
 ## Correction
 
-The validate this exercise all answers should return the expected numerical value given in the correction AND uses Pandas. For example using NumPy to compute the mean doesn't respect the philosophy of the exercise which is to use Pandas.
+To validate this exercise all answers should return the expected numerical value given in the correction AND uses Pandas. For example using NumPy to compute the mean doesn't respect the philosophy of the exercise which is to use Pandas.
 
 1. How many rows and columns are there?**10000 entries** and **14 columns**
 
