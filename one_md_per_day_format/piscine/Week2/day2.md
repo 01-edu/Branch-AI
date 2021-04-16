@@ -475,7 +475,7 @@ def predict_one_vs_all(X, clf0, clf1, clf2 ):
 1. This question is validated if each classifier has as input a binary data as below:
 
 ```python
-       def train(X_train, y_train):
+def train(X_train, y_train):
        clf = LogisticRegression()
        clf1 = LogisticRegression()
        clf2 = LogisticRegression()
