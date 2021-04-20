@@ -193,8 +193,8 @@ classifier.fit(X_train_scaled, y_train)
 
     F1 on the test set:  0.9801324503311258
     Accuracy on the test set:  0.9736842105263158
-    Recall on the test set:  0.9736842105263158
-    Precision on the test set:  0.9866666666666667
+    Recall on the test set:  0.9866666666666667
+    Precision on the test set:  0.9736842105263158
     ROC_AUC on the test set:  0.9863247863247864
     ```
 
