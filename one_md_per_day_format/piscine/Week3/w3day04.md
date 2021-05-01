@@ -258,7 +258,7 @@ As explained in the resource, the Bag of word representation makes the assumptio
 
 - Boolean: Each document is a boolean vector
 - Wordcount: Each document is a word count vector
-- TFIDF: Each document is a score vector. The score is detailed in the next exercise.
+- TFIDF: Each document is a score vector. The score is detailed here: https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.TfidfVectorizer.html.
 
 The data `tweets_train.txt` contains tweets labeled with a sentiment. It gives the positivity of a tweet.
 
@@ -303,22 +303,22 @@ Example :
 
 ```console
 <6588x500 sparse matrix of type '<class 'numpy.int64'>'
-	with 79709 stored elements in Compressed Sparse Row format>
+	with 37334 stored elements in Compressed Sparse Row format>
 ```
 
 2. This question is validated if the output of `print(df.iloc[:3,400:403].to_markdown())` is:
 
-|     | talk | team | tell |
-| --: | ---: | ---: | ---: |
-|   0 |    0 |    0 |    0 |
-|   1 |    0 |    0 |    0 |
-|   2 |    0 |    0 |    0 |
+|    |   someth |   son |   song |
+|---:|---------:|------:|-------:|
+|  0 |        0 |     0 |      0 |
+|  1 |        0 |     0 |      0 |
+|  2 |        0 |     0 |      0 |
 
 3. This question is validated if the shape of the wordcount DataFrame  is `(6588, 501)` and if the output of `print(df.iloc[300:304,499:501].to_markdown())` is:
 
-|     | youtube | label |
-| --: | ------: | ----: |
-| 300 |       0 |     0 |
-| 301 |       0 |    -1 |
-| 302 |       1 |     0 |
-| 303 |       0 |     1 |
+|     |   your |   label |
+|----:|-------:|--------:|
+| 300 |      0 |       0 |
+| 301 |      0 |      -1 |
+| 302 |      0 |       0 |
+| 303 |      0 |       1 |
