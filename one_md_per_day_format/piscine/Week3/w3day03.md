@@ -242,7 +242,3 @@ model.add(Dense(3, activation='softmax'))
 model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
 model.fit(X_train_sc, y_train_multi_class, epochs = 1000, batch_size=20)
 ```
-
-# Exercise 6 GridSearch
-
-https://medium.com/@am.benatmane/keras-hyperparameter-tuning-using-sklearn-pipelines-grid-search-with-cross-validation-ccfc74b0ce9f
