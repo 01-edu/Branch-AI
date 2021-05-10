@@ -42,20 +42,25 @@ The two steps are detailed below.
 ## Face emotions classfication
 
 
-Emotion detection is one of the most researched topics in the modern-day machine learning arena. The ability to accurately detect and identify an emotion opens up numerous doors for Advanced Human Computer Interaction. The aim of this project is to detect up to five distinct facial emotions in real time. This project runs on top of a Convolutional Neural Network (CNN) that is built with the help of Keras whose backend is TensorFlow in Python. The facial emotions that can be detected and classified by this system are Happy, Sad, Anger, Surprise and Neutral.
+Emotion detection is one of the most researched topics in the modern-day machine learning arena. The ability to accurately detect and identify an emotion opens up numerous doors for Advanced Human Computer Interaction. The aim of this project is to detect up to seven distinct facial emotions in real time. This project runs on top of a Convolutional Neural Network (CNN) that is built with the help of Keras whose backend is TensorFlow in Python. The facial emotions that can be detected and classified by this system are Happy, Sad, Angry, Surprise, Fear, Disgust and Neutral.
+
 
 Your goal is to implement a program that takes as input a video stream that contains a person's face and that predicts the emotion of the person. 
 
 **Step 1**: **Fit the emotion classifier**
 
-- Train a CNN on the dataset TODO le nommer. Here is an example of architecture you can implement: https://www.quora.com/What-is-the-VGG-neural-network . **The CNN has to perform more than 65% on the test set**. You will see that the CNNs take a lot of time to train. You don't want to overfit the neural network. I strongly suggest to use early stopping, callbacks and to monitor the training using the tensorboard.
+- Train a CNN on the dataset `train.csv`. Here is an example of architecture you can implement: https://www.quora.com/What-is-the-VGG-neural-network . **The CNN has to perform more than 70% on the test set**. You will see that the CNNs take a lot of time to train. You don't want to overfit the neural network. I strongly suggest to use early stopping, callbacks and to monitor the training using the tensorboard. 
 
-- Optional: Use a pre-trained CNN to improve the accuracy. You will find some huge CNN's architecture that perform well. The issue is that it is expensive to train them from scratch. You'll need a lot of GPUs, memory and time. **Pre-trained CNNs** solve partially this issue because they are already trained on a dataset and perform well on some use cases. However, building a CNN from scratch is required, as mentioned, this step is optional and doesn't replace the first one. 
+You have to save the trained model in `my_own_model.pkl` and to explain the chosen architecture in `my_own_model_architecture.txt`. Use `model.summary())` to print the architecture. It is also expected that you explains the iterations and how you end up choosing your final architecture. Save a screenshot of the tensorboard while the model's training in `tensorboard.png` and save a plot with the learning curves showing the model training and stopping BEFORE the model starts overfitting in `learning_curves.png`. 
+
+- Optional: Use a pre-trained CNN to improve the accuracy. You will find some huge CNN's architecture that perform well. The issue is that it is expensive to train them from scratch. You'll need a lot of GPUs, memory and time. **Pre-trained CNNs** solve partially this issue because they are already trained on a dataset and perform well on some use cases. However, building a CNN from scratch is required, as mentioned, this step is optional and doesn't replace the first one. Similarly, save the model and explain the chosen architecture. 
 
 **Step 2**: **Classify emotions from a video stream** 
 
 
-- Use the video stream outputted by your computer's webcam and preprocess it to make it compatible with the CNN you trained. One of the preprocessing steps is: face detection. As you may have seen the training samples are imaged centered on a face. To do so, I suggest to use a pre-trained model to detect faces.  OpenCV for image processing tasks where we identify a face from a live webcam feed which is then processed and fed into the trained neural network for emotion detection.
+- Use the video stream outputted by your computer's webcam and preprocess it to make it compatible with the CNN you trained. One of the preprocessing steps is: face detection. As you may have seen the training samples are imaged centered on a face. To do so, I suggest to use a pre-trained model to detect faces.  OpenCV for image processing tasks where we identify a face from a live webcam feed which is then processed and fed into the trained neural network for emotion detection. The preprocessing pipeline will be corrected with a functional test in `preprocessing_test`: 
+    - **Input**: Video stream of 20 sec with a face on it
+    - **Output**: 20 (or 21) images cropped and centered on the face with 48 x 48 grayscale pixels
 
 - Predict at least one emotion per second from the video stream. The minimum requirement is printing in the prompt the predicted emotion with its associated probability. 
 
@@ -76,15 +81,30 @@ project
 │   environment.yml    
 │
 └───data
-│   │   emotion_classfication.csv
-│
+│   │   train.csv
+│   │   test.csv
+│   │   xxx.csv
 │
 └───results
-│   │   my_own_model.pkl
-│   │   pre_trained_model.pkl (optional)
-│   │   my_own_model_architecture.txt
-│   │   pre_trained_model_architecture.txt (optional)
-│   │   hacked_image.png   (optional)
+│   │   
+|   |───model (free format)
+│   │   │   my_own_model.pkl
+│   │   │   my_own_model_architecture.txt
+│   │   │   tensorboard.png 
+│   │   │   learning_curves.png 
+│   │   │   pre_trained_model.pkl (optional)
+│   │   │   pre_trained_model_architecture.txt (optional)
+│   │  
+|   |───hack_cnn (free format)
+│   │   │   hacked_image.png   (optional)
+│   │   │   input_image.png
+│   │   
+|   |───preprocessing_test 
+|   |   |   input_video.mp4  (free format)
+│   │   │   image0.png  (free format)
+│   │   │   image1.png
+│   │   │   imagen.png
+│   │   │   image20.png
 |
 |───scripts
 │   │   train.py
@@ -97,7 +117,8 @@ project
 
 
 ``` 
-pre_trained_model_architecture.txt: architecture and source
+
+- Run **predict.py** expected output:
 
 ```prompt 
 python predict.py
@@ -105,6 +126,7 @@ python predict.py
 Accuracy on test set: 72%
 
 ```
+- Run **predict_live_stream.py** expected output:
 
 ```prompt 
 python predict_live_stream.py
@@ -139,3 +161,4 @@ Preprocessing ...
 - http://ice.dlut.edu.cn/valse2018/ppt/WeihongDeng_VALSE2018.pdf
 
 - https://arxiv.org/pdf/1812.06387.pdf
+
