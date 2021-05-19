@@ -24,7 +24,7 @@ The sinking of the Titanic is one of the most infamous shipwrecks in history. On
 
 While there was some element of luck involved in surviving, it seems some groups of people were more likely to survive than others.
 
-In this challenge, you have to build a predictive model that answers the question: **“what sorts of people were more likely to survive?”** using passenger data (ie name, age, gender, socio-economic class, etc).
+In this challenge, you have to build a predictive model that answers the question: **“what sorts of people were more likely to survive?”** using passenger data (ie name, age, gender, socio-economic class, etc). **You will have to submit your prediction on Kaggle**.
 
 ## Preliminary
 The way the Kaggle platform works is explained in the challenge overview page. If you need more details,  I suggest this ressource that gives detailed explanations. 
@@ -63,6 +63,7 @@ project
 
 - `scripts` contains python file(s) that perform(s) the feature engineering, the model's training and prediction on the test set. It could also be one single Jupyter Notebook. It has to be commented to help the reviewers understand the approach and run the code without any bugs.  
 
+- **Submit your predictions on the Kaggle's competition platform**. Check your ranking and score in the leaderboard. 
 
 ### Scores
 
