@@ -404,7 +404,7 @@ This can be done in three steps: Get the max, create a boolean mask that indicat
 
 ---
 
-## Exercise 9 Football tournament
+# Exercise 9 Football tournament
 
 The goal of this exercise is to learn to use permutations, complex
 

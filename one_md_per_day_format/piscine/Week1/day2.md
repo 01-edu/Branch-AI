@@ -42,7 +42,7 @@ It contains ALL you need to know about Pandas.
 
   - https://jakevdp.github.io/PythonDataScienceHandbook/03.04-missing-values.html
 
-# Exercice 1
+# Exercice 1 Your first DataFrame
 
 The goal of this exercise is to learn to create basic Pandas objects.
 

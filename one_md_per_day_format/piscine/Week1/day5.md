@@ -32,7 +32,7 @@ Pandas website
 - https://pandas.pydata.org/Pandas_Cheat_Sheet.pdf
 - https://www.learndatasci.com/tutorials/python-pandas-tutorial-complete-introduction-for-beginners/
 
-# Exercise 1
+# Exercise 1 Series
 
 The goal of this exercise is to learn to manipulate time series in Pandas.
 
@@ -80,7 +80,7 @@ The goal of this exercise is to learn to manipulate time series in Pandas.
 
     If the `NaN` values have been dropped the solution is also accepted. The solution uses `rolling().mean()`.
 
-# Exercise 2
+# Exercise 2 Financial data
 
 The goal of this exercise is to learn to use Pandas on Time Series an on Financial data.
 
