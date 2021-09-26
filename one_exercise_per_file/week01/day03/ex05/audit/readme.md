@@ -11,6 +11,6 @@ The plot has to contain:
 
 ![alt text][logo_ex5]
 
-[logo_ex5]: images/day03/w1day03_ex5_plot1.png "Subplots ex5"
+[logo_ex5]: ../images/w1day03_ex5_plot1.png "Subplots ex5"
 
 Check that the plot has been created with a for loop.
