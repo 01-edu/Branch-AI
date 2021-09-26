@@ -21,8 +21,7 @@ We will also learn progressively the Machine Learning methodology for supervised
 - Exercise 2 Linear regression in 1D
 - Exercise 3 Train test split
 - Exercise 4 Forecast diabetes progression
-- Exercise 5 Forecast diabetes progression
-- Bonus: Exercise 6 Gradient Descent - **Optional**
+- Bonus: Exercise 5 Gradient Descent - **Optional**
 
 
 ## Virtual Environment 
