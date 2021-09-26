@@ -1,33 +1,37 @@
-# D05  Piscine AI - Data Science
+# W1D05  Piscine AI - Data Science
 
-The goal of this day is to understand practical usage of Pandas.
-Today we will discover some important functionalities of Pandas. they will allow you to manipulate the data (DataFrame and Series) in order to clean, delete, add, merge and leverage more information.
+## Time Series with Pandas
 
-In Data Science this is crucial, because without cleaned data there's no algorithms learning.
+Time series data are data that are indexed by a sequence of dates or times. Today, you'll learn how to use methods built into Pandas to work with this index. You'll also learn for instance:
+- to resample time series to change the frequency
+- to calculate rolling and cumulative values for times series
+-  to build a backtest
 
-Author:
+Time series a used A LOT in finance. You'll learn to evaluate financial strategies using Pandas. It is important to keep in mind that Python is vectorized. That's why some questions constraint you to not use a for loop ;-).
 
-# Table of Contents:
+## Exercises of the day
 
-Historical part:
+- Exercise 1 Series
+- Exercise 2 Financial data
+- Exercise 3 Multi asset returns
+- Exercise 4 Backtest
 
-# Introduction
 
-Not only is the pandas library a central component of the data science toolkit but it is used in conjunction with other libraries in that collection.
+## Virtual Environment 
+- Python 3.x
+- NumPy
+- Pandas
+- Jupyter or JupyterLab
 
-Pandas is built on top of the NumPy package, meaning a lot of the structure of NumPy is used or replicated in Pandas. Data in pandas is often used to feed statistical analysis in SciPy, plotting functfunctionsions from Matplotlib, and machine learning algorithms in Scikit-learn.
+*Version of Pandas I used to do the exercises: 1.0.1*. 
+I suggest to use the most recent one.
 
-## Historical
-
-## Rules
-
-...
-
-## Ressources
-
-Pandas website
+## Resources
 
 - https://jakevdp.github.io/PythonDataScienceHandbook/
 
 - https://pandas.pydata.org/Pandas_Cheat_Sheet.pdf
+
 - https://www.learndatasci.com/tutorials/python-pandas-tutorial-complete-introduction-for-beginners/
+
+- https://towardsdatascience.com/different-ways-to-iterate-over-rows-in-a-pandas-dataframe-performance-comparison-dc0d5dcef8fe
