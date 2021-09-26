@@ -122,7 +122,7 @@ The goal of this exerice is to learn to compute the similarity between two sente
 
 ## Correction 
 
-2. This question is validated if the similarities between the sentences are: 
+1. This question is validated if the similarities between the sentences are: 
 
     ```
     sentence_1 <=> sentence 2 : 0.7073220863266589
