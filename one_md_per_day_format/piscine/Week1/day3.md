@@ -238,7 +238,7 @@ df = pd.DataFrame(zip(dates, price),
                   columns=['Date','Company_A'])
 ```
 
-1. Using Plotly express, reproduce the plot in the image. As the data is generated randomly I do not expect you to reproduce the same line.
+1. Using **Plotly express**, reproduce the plot in the image. As the data is generated randomly I do not expect you to reproduce the same line.
 
 ![alt text][logo_ex6]
 
