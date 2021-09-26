@@ -238,6 +238,3 @@ You should notice that the neural network is struggling to learn. By luck the in
 2/2 [==============================] - 0s 1ms/step - loss: 0.6559 - accuracy: 0.6274`
 
 2. This solution is validated if the the accuracy at epoch 50 is higher than 95%.
-
-
-AA9FE32D1CA7E292E6A4C27145
