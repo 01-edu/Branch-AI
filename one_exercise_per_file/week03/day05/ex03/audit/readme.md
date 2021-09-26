@@ -12,4 +12,4 @@
 
 ![alt text][logo]
 
-[logo]: w3day05ex1_plot.png "Plot"
+[logo]: ../images/w3day05ex1_plot.png "Plot"
