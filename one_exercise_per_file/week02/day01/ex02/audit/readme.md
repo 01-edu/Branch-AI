@@ -2,7 +2,7 @@
 
 ![alt text][q1]
 
-[q1]: ../images/w2_day1_ex2_q1.png "Scatter plot"
+[q1]: ../w2_day1_ex2_q1.png "Scatter plot"
 
 2. This question is validated if the equation of the fitted line is: `y = 42.619430291366946 * x + 99.18581817296929`
 
@@ -10,7 +10,7 @@
 
 ![alt text][q3]
 
-[q3]: ../images/w2_day1_ex2_q3.png "Scatter plot + fitted line"
+[q3]: ../w2_day1_ex2_q3.png "Scatter plot + fitted line"
 
 4. This question is validated if the outputted prediction for the first 10 values are:
 

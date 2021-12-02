@@ -16,7 +16,7 @@ X, y, coef = make_regression(n_samples=100,
 
 ![alt text][q1]
 
-[q1]: images/w2_day1_ex2_q1.png "Scatter plot"
+[q1]: ./w2_day1_ex2_q1.png "Scatter plot"
 
 2. Fit a LinearRegression from Scikit-learn on the generated data and give the equation of the fitted line. The expected output is: `y = coef * x + intercept`
 
@@ -24,7 +24,7 @@ X, y, coef = make_regression(n_samples=100,
 
 ![alt text][q3]
 
-[q3]: images/w2_day1_ex2_q3.png "Scatter plot + fitted line"
+[q3]: ./w2_day1_ex2_q3.png "Scatter plot + fitted line"
 
 4. Predict on X
 

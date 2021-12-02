@@ -12,6 +12,6 @@ The goal of this exercise is to learn to use SpaCy embedding on a document.
  
 ![alt text][logo]
 
-[logo]: images/w3day05ex1_plot.png "Plot"
+[logo]: ./w3day05ex1_plot.png "Plot"
 
 https://medium.com/datadriveninvestor/cosine-similarity-cosine-distance-6571387f9bf8

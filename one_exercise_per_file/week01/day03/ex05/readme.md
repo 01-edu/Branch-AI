@@ -6,7 +6,7 @@ The goal of this exercise is to learn to use Matplotlib to create subplots.
 
 ![alt text][logo_ex5]
 
-[logo_ex5]: images/w1day03_ex5_plot1.png "Subplots ex5"
+[logo_ex5]: ./w1day03_ex5_plot1.png "Subplots ex5"
 
 The plot has to contain:
 

@@ -10,6 +10,6 @@ The plot has to contain:
 
 ![alt text][logo_ex4]
 
-[logo_ex4]: ../images/w1day03_ex4_plot1.png "Twin axis ex4"
+[logo_ex4]: ../w1day03_ex4_plot1.png "Twin axis ex4"
 
 https://matplotlib.org/gallery/api/two_scales.html

@@ -19,7 +19,7 @@ Here is the data we will be using:
 
 ![alt text][logo]
 
-[logo]: images/w1day03_ex1_plot1.png "Bar plot ex1"
+[logo]: ./w1day03_ex1_plot1.png "Bar plot ex1"
 
 The plot has to contain:
 

@@ -34,7 +34,7 @@ The plot should look like this:
 
 ![alt text][ex3q1]
 
-[ex3q3]: images/w2_day2_ex3_q3.png "Scatter plot"
+[ex3q3]: ./w2_day2_ex3_q3.png "Scatter plot"
 
 2. Fit a Logistic Regression on the generated data using scikit learn. Print the coefficients and the interception of the Logistic Regression.
 
@@ -42,7 +42,7 @@ The plot should look like this:
 
 ![alt text][ex3q3]
 
-[ex3q1]: images/w2_day2_ex3_q1.png "Scatter plot + Logistic regression"
+[ex3q1]: ./w2_day2_ex3_q1.png "Scatter plot + Logistic regression"
 
 4.  Create a function `predict_probability` that takes as input the data point and the coefficients and that returns the predicted probability. As a reminder, the probability is given by: `p(x) = 1/(1+ exp(-(coef*x + intercept)))`.  Check you have the same results as the method `predict_proba` from Scikit-learn.
 
@@ -67,7 +67,7 @@ The plot should look like this:
 
 ![alt text][ex3q6]
 
-[ex3q6]: images/w2_day2_ex3_q5.png "Scatter plot + Logistic regression + predictions"
+[ex3q6]: ./w2_day2_ex3_q5.png "Scatter plot + Logistic regression + predictions"
 
 ## 2 dimensions
 
@@ -92,7 +92,7 @@ The plot should look like this:
 
 ![alt text][ex3q7]
 
-[ex3q7]: images/w2_day2_ex3_q6.png "Logistic regression decision boundary"
+[ex3q7]: ./w2_day2_ex3_q6.png "Logistic regression decision boundary"
 
 ```python
 xx, yy = np.mgrid[-5:5:.01, -5:5:.01]

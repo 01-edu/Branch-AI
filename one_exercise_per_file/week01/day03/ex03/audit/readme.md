@@ -9,4 +9,4 @@
 
 ![alt text][logo_ex3]
 
-[logo_ex3]: ../images/w1day03_ex3_plot1.png "Scatter plot ex3"
+[logo_ex3]: ../w1day03_ex3_plot1.png "Scatter plot ex3"

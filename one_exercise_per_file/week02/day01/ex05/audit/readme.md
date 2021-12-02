@@ -2,7 +2,7 @@
 
 ![alt text][ex5q1]
 
-[ex5q1]: ../images/w2_day1_ex5_q1.png "Scatter plot "
+[ex5q1]: ../w2_day1_ex5_q1.png "Scatter plot "
 
 2. This question is validated if the output is: `11808.867339751561`
 
@@ -20,7 +20,7 @@ array([158315.41493175, 158001.96852692, 157689.02212209, 157376.57571726,
 
 ![alt text][ex5q5]
 
-[ex5q5]: ../images/w2_day1_ex5_q5.png "MSE"
+[ex5q5]: ../w2_day1_ex5_q5.png "MSE"
 
 6. This question is validated if the point returned is
 `array([42.5, 99. ])`. It means that `a= 42.5` and `b=99`.
@@ -36,7 +36,7 @@ Intercept (b): 99.18581814447936
 
 ![alt text][ex5q8]
 
-[ex5q8]: ../images/w2_day1_ex5_q8.png "MSE + Gradient descent"
+[ex5q8]: ../w2_day1_ex5_q8.png "MSE + Gradient descent"
 
 9. This question is validated if the coefficients and intercept returned are:
 

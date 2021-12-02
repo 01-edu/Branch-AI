@@ -14,7 +14,7 @@ x_axis = [0.0, 1.0, 2.0, 3.0, 4.0]
 
 ![alt text][logo_ex4]
 
-[logo_ex4]: images/w1day03_ex4_plot1.png "Twin axis plot ex4"
+[logo_ex4]: ./w1day03_ex4_plot1.png "Twin axis plot ex4"
 
 The plot has to contain:
 

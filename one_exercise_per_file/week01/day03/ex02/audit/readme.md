@@ -3,4 +3,4 @@ You should also observe that the older people are, the the more children they ha
 
 ![alt text][logo_ex2]
 
-[logo_ex2]: ../images/w1day03_ex2_plot1.png "Scatter plot ex2"
+[logo_ex2]: ../w1day03_ex2_plot1.png "Scatter plot ex2"

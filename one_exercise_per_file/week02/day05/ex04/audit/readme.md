@@ -2,7 +2,7 @@
 
 ![alt text][logo_ex5q1]
 
-[logo_ex5q1]: ../images/w2_day5_ex5_q1.png "Validation curve "
+[logo_ex5q1]: ../w2_day5_ex5_q1.png "Validation curve "
 
 The code that generated the data in the plot is:
 
@@ -24,4 +24,4 @@ train_scores, test_scores = validation_curve(clf,
 
 ![alt text][logo_ex5q2]
 
-[logo_ex5q2]: ../images/w2_day5_ex5_q2.png "Learning curve "
+[logo_ex5q2]: ../w2_day5_ex5_q2.png "Learning curve "

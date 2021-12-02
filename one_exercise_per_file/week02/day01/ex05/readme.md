@@ -21,7 +21,7 @@ X, y, coef = make_regression(n_samples=100,
 
 ![alt text][ex5q1]
 
-[ex5q1]: images/w2_day1_ex5_q1.png "Scatter plot "
+[ex5q1]: ./w2_day1_ex5_q1.png "Scatter plot "
 
 As a reminder, fitting a Linear Regression on this data means finding (a,b) that fits well the data points.
 
@@ -103,7 +103,7 @@ The expected output is:
 
 ![alt text][ex5q5]
 
-[ex5q5]: images/w2_day1_ex5_q5.png "MSE "
+[ex5q5]: ./w2_day1_ex5_q5.png "MSE "
 
 6. From the `losses` list, find the optimal value of a and b and plot the line in the scatter point of question 1.
 
@@ -119,6 +119,6 @@ In a nutshel, Gradient descent is an optimization algorithm used to minimize som
 
 ![alt text][ex5q8]
 
-[ex5q8]: images/w2_day1_ex5_q8.png "MSE + Gradient descent"
+[ex5q8]: ./w2_day1_ex5_q8.png "MSE + Gradient descent"
 
 9. Use Linear Regression from Scikit-learn. Compare the results.

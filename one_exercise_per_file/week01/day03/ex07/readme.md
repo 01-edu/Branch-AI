@@ -14,7 +14,7 @@ y2 = np.random.randn(50) + 2
 
 ![alt text][logo_ex7]
 
-[logo_ex7]: images/w1day03_ex7_plot1.png "Box plot ex7"
+[logo_ex7]: ./w1day03_ex7_plot1.png "Box plot ex7"
 
 The plot has to contain:
 

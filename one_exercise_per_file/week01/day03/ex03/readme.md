@@ -6,7 +6,7 @@ The goal of this plot is to learn to use Matplotlib to plot data. As you know, M
 
 ![alt text][logo_ex3]
 
-[logo_ex3]: images/w1day03_ex3_plot1.png "Scatter plot ex3"
+[logo_ex3]: ./w1day03_ex3_plot1.png "Scatter plot ex3"
 
 The plot has to contain:
 
