@@ -1,9 +1,7 @@
-1. This question is validated if the plot is in the image is reproduced given those criteria:
+##### The solution of question 1 is accepted if the plot reproduces the plot in the image and respect those criteria. The code below shows a solution. 
 
-The plot has to contain:
-
-- the title
-- the legend
+###### Does it have a the title ? 
+###### Does it have a legend ?
 
 ![alt text][logo_ex7]
 

@@ -1,12 +1,9 @@
-1. This question is validated if the plot reproduces the plot in the image and respect those criteria
+##### The solution of question 1 is accepted if the plot reproduces the plot in the image and respect those criteria.
 
-The plot has to contain:
-
-- the title
-- name on left y-axis and right y-axis
-- **style**:
-  - left data in black
-  - right data in red
+###### Does it have a the title ? 
+###### Does it have a name on x-axis and y-axis ?
+###### Is the left data black ? 
+###### Is the right data red ? 
 
 ![alt text][logo_ex4]
 

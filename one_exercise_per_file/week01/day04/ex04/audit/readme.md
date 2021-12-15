@@ -1,6 +1,6 @@
-The for loop is forbidden in this exercise. The goal is to use `groupby` and `apply`.
+##### The exercice is validated is all questions of the exercice are validated and if the for loop hasn't been used. The goal is to use `groupby` and `apply`.
 
-1. This question is validated if the output is:
+##### The question 1 is validated if the output is:
 
     ```python
         df = pd.DataFrame(range(1,11), columns=['sequence'])
@@ -20,7 +20,22 @@ The for loop is forbidden in this exercise. The goal is to use `groupby` and `ap
     |  8 |        8.2 |
     |  9 |        8.2 |
 
-2. This question is validated if the output is the same as the one returned by:
+##### The question 2 is validated if the output is a Pandas Series or DataFrame with the first 11 rows equal to the output below. The code below give a solution. 
+
+    |    |   sequence |
+    |---:|-----------:|
+    |  0 |       1.45 |
+    |  1 |       2    |
+    |  2 |       3    |
+    |  3 |       4    |
+    |  4 |       5    |
+    |  5 |       6    |
+    |  6 |       7    |
+    |  7 |       8    |
+    |  8 |       9    |
+    |  9 |       9.55 |
+    | 10 |      11.45 |
+
 
     ```python
     def winsorize(df_series, quantiles):
@@ -37,23 +52,5 @@ The for loop is forbidden in this exercise. The goal is to use `groupby` and `ap
 
     df.groupby("group")[['sequence']].apply(winsorize, [0.05,0.95])
     ```
-
-    The output can also be a Series instead of a DataFrame.
-
-    The expected output (first rows) is:
-
-    |    |   sequence |
-    |---:|-----------:|
-    |  0 |       1.45 |
-    |  1 |       2    |
-    |  2 |       3    |
-    |  3 |       4    |
-    |  4 |       5    |
-    |  5 |       6    |
-    |  6 |       7    |
-    |  7 |       8    |
-    |  8 |       9    |
-    |  9 |       9.55 |
-    | 10 |      11.45 |
 
 - https://towardsdatascience.com/how-to-use-the-split-apply-combine-strategy-in-pandas-groupby-29e0eb44b62e

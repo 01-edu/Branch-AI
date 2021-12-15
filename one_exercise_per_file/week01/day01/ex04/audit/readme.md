@@ -1,10 +1,12 @@
-For this exercise, as the results may change depending on the version of the package or the OS, I give the code to correct the exercise. If the code is correct and the output is not the same as mine, it is accepted.
+##### The exercice is validated is all questions of the exercice are validated
 
-1. The solution is accepted if the solution is: `np.random.seed(888)`
+##### For this exercise, as the results may change depending on the version of the package or the OS, I give the code to correct the exercise. If the code is correct and the output is not the same as mine, it is accepted.
 
-2. The solution is accepted if the solution is `np.random.randn(100)`. The value of the first element is `0.17620087373662233`.
+##### The question 1 is validated if the solution is: `np.random.seed(888)`
 
-3. The solution is accepted if the solution is `np.random.randint(1,11,(8,8))`.
+##### The question 2 is validated if the solution is: `np.random.randn(100)`. The value of the first element is `0.17620087373662233`.
+
+##### The question 3 is validated if the solution is: `np.random.randint(1,11,(8,8))`.
 
     ```console
     Given the NumPy version and the seed, you should have this output:
@@ -19,7 +21,7 @@ For this exercise, as the results may change depending on the version of the pac
         [ 4,  4,  9,  2,  8,  5,  9,  5]])
     ```
 
-4. The solution is accepted if the solution is `np.random.randint(1,18,(4,2,5))`.
+##### The question 4 is validated if the solution is: `np.random.randint(1,18,(4,2,5))`.
 
     ```console
     Given the NumPy version and the seed, you should have this output:

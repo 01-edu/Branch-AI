@@ -1,6 +1,4 @@
-## Correction
-
-1. This question is validated if the outputted DataFrame is:
+##### This question is validated if the outputted DataFrame is:
 
     |    | letter   |   number |
     |---:|:---------|---------:|

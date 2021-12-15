@@ -1,10 +1,12 @@
-1. This question is validated if the generated array is based on an iterator as `range` or `np.arange`. Check that 50 is part of the array.
+##### The exercice is validated is all questions of the exercice are validated
 
-2. This question is validated if the generated array is based on an iterator as `range` or `np.arange`. Check that 100 is part of the array.
+##### The question 1 is validated if the generated array is based on an iterator as `range` or `np.arange`. Check that 50 is part of the array.
 
-3. This question is validated if you concatenated this way `np.concatenate(array1,array2)`.
+##### The question 2 is validated if the generated array is based on an iterator as `range` or `np.arange`. Check that 100 is part of the array.
 
-4. This question is validated if the result is:
+##### The question 3 is validated if you concatenated this way `np.concatenate(array1,array2)`.
+
+##### The question 4 is validated if the result is:
 
     ```console
     array([[  1,  ... ,  10],

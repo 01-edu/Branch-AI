@@ -1,17 +1,14 @@
-Preliminary:
+##### The exercice is validated is all questions of the exercice are validated
 
-- As usual the first steps are:
+###### Have you checked missing values and data types ? 
+###### Have you converted string dates to datetime ? 
+###### Have you set dates as index ? 
+###### Have you used `info` or `describe` to have a first look at the data ?
 
-  - Check missing values and data types
-  - Convert string dates to datetime
-  - Set dates as index
-  - Use `info` or `describe` to have a first look at the data
 
-The exercise is not validated if these steps have not been done.
+##### The question 1 is validated if you inserted the right columns in `Candlestick` `Plotly` object. The Candlestick is based on Open, High, Low and Close columns. The index is Date (datetime). 
 
-1. The Candlestick is based on Open, High, Low and Close columns. The index is Date (datetime). As long as you inserted the right columns in `Candlestick` `Plotly` object you validate the question.
-
-2. This question is validated if the output of `print(transformed_df.head().to_markdown())` is
+##### This question 2 is validated if the output of `print(transformed_df.head().to_markdown())` is as below and if there are **482 months**.
 
 | Date                |     Open |    Close |      Volume |     High |      Low |
 |:--------------------|---------:|---------:|------------:|---------:|---------:|
@@ -26,9 +23,8 @@ To get this result there are two ways: `resample` and `groupby`. There are two k
 - Find how to affect the aggregation on the last **business** day of each month. This is already implemented in Pandas and the keyword that should be used either in `resample` parameter or in `Grouper` is `BM`.
 - Choose the right aggregation function for each variable. The prices (Open, Close and Adjusted Close) should be aggregated by taking the `mean`. Low should be aggregated by taking the `minimum` because it represents the lower price of the day, so the lowest price on the month is the lowest price of the lowest prices on the day. The same logic applied to High, leads to use the `maximum` to aggregate the High. Volume should be aggregated using the `sum` because the monthly volume is equal to the sum of daily volume over the month.
 
-    There are **482 months**.
 
-3. The solution is accepted if it doesn't involve a for loop and the output is:
+##### The question 3 is validated if it doesn't involve a for loop and the output is as below. The first way to do it is to compute the return without for loop is to use `pct_change`. And the second way to do it is to implement the formula given in the exercise in a vectorized way. To get the value at `t-1` you can use `shift`.
 
     ```console
     Date
@@ -45,6 +41,3 @@ To get this result there are two ways: `resample` and `groupby`. There are two k
     2021-01-29   -0.026448
     Name: Open, Length: 10118, dtype: float64
     ```
-
-- The first way is to compute the return without for loop is to use `pct_change`
-- The second way to compute the return without for loop is to implement the formula given in the exercise in a vectorized way. To get the value at `t-1` you can use `shift`

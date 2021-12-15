@@ -1,17 +1,15 @@
-Preliminary:
+##### The exercice is validated is all questions of the exercice are validated
 
-- As usual the first steps are:
+###### Have you checked missing values and data types ? 
+###### Have you converted string dates to datetime ? 
+###### Have you set dates as index ? 
+###### Have you used `info` or `describe` to have a first look at the data ?
 
-  - Check missing values and data types
-  - Convert string dates to datetime
-  - Set dates as index
-  - Use `info` or `describe` to have a first look at the data
 
-The exercise is not validated if these steps haven't been done.
 
-My results can be reproduced using: `np.random.seed = 2712`. Given the versions of NumPy used I do not guaranty the reproducibility of the results - that is why I also explain the steps to get to the solution.
+**My results can be reproduced using: `np.random.seed = 2712`. Given the versions of NumPy used I do not guaranty the reproducibility of the results - that is why I also explain the steps to get to the solution.**
 
-1. This question is validated if the return is computed as: Return(t) = (Price(t+1) - Price(t))/Price(t) and returns this output.
+##### The question 1 is validated if the return is computed as: Return(t) = (Price(t+1) - Price(t))/Price(t) and returns this output. Note that if the index is not ordered in ascending order the futur return computed is wrong. The answer is also accepted if the returns is computed  as in the exercise 2 and then shifted in the futur using `shift`, but I do not recommend this implementation as it adds missing values !
 
     ```console
         Date
@@ -29,8 +27,6 @@ My results can be reproduced using: `np.random.seed = 2712`. Given the versions 
         Name: Daily_futur_returns, Length: 10118, dtype: float64
     ```
 
-    The answer is also accepted if the returns is computed  as in the exercise 2 and then shifted in the futur using `shift`, but I do not recommend this implementation as it adds missing values !
-
     An example of solution is:
 
     ```python
@@ -40,11 +36,10 @@ My results can be reproduced using: `np.random.seed = 2712`. Given the versions 
         compute_futur_return(df['Adj Close'])
     ```
 
-    Note that if the index is not ordered in ascending order the futur return computed is wrong.
 
-2. This question is validated if the index of the Series is the same as the index of the DataFrame. The data of the series can be generated using `np.random.randint(0,2,len(df.index)`.
+##### The question 2 is validated if the index of the Series is the same as the index of the DataFrame. The data of the series can be generated using `np.random.randint(0,2,len(df.index)`.
 
-3. This question is validated if the Pnl is computed as: signal * futur_return. Both series should have the same index.
+##### This question is validated if the Pnl is computed as: signal * futur_return. Both series should have the same index.
 
 ```console
     Date
@@ -62,8 +57,6 @@ My results can be reproduced using: `np.random.seed = 2712`. Given the versions 
     Name: PnL, Length: 10119, dtype: float64
 ```
 
-4. The question is validated if you computed the return of the strategy as: `(Total earned - Total invested) / Total` invested. The result should be close to 0. The formula given could be simplified as `(PnLs.sum())/signal.sum()`.
+##### The question 4 is validated if you computed the return of the strategy as: `(Total earned - Total invested) / Total` invested. The result should be close to 0. The formula given could be simplified as `(PnLs.sum())/signal.sum()`. My return is: 0.00043546984088551553 because I invested 5147$ and I earned 5149$.
 
-My return is: 0.00043546984088551553 because I invested 5147$ and I earned 5149$.
-
-5. The question is validated if you replaced the previous signal Series with 1s. Similarly as the previous question, we earned 10128$ and we invested 10118$ which leads to a return of 0.00112670194140969 (0.1%).
+##### The question is validated if you replaced the previous signal Series with 1s. Similarly as the previous question, we earned 10128$ and we invested 10118$ which leads to a return of 0.00112670194140969 (0.1%).
