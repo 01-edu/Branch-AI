@@ -1,4 +1,4 @@
-1. This question is validated if the plot looks like this:
+##### The question 1 is validated if the plot looks like this:
 
 ![alt text][ex2q1]
 

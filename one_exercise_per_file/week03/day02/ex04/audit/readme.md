@@ -1,4 +1,4 @@
-1. This question is validated if the output of `model.get_config()['layers']` matches the fields `batch_input_shape`, `units` and `activation`.
+##### The question 1 is validated if the output of `model.get_config()['layers']` matches the fields `batch_input_shape`, `units` and `activation`.
 
 ```
 [{'class_name': 'InputLayer',
@@ -59,4 +59,4 @@ You should notice that the neural network is struggling to learn. By luck the in
 `Epoch 50/50
 2/2 [==============================] - 0s 1ms/step - loss: 0.6559 - accuracy: 0.6274`
 
-2. This solution is validated if the the accuracy at epoch 50 is higher than 95%.
+##### The question 2 is validated if the the accuracy at epoch 50 is higher than 95%.

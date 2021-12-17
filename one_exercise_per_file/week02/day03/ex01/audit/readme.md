@@ -1,10 +1,12 @@
-1. This question is validated if the `imp_mean.statistics_` returns:
+##### The exercice is validated is all questions of the exercice are validated
+
+##### The question 1 is validated if the `imp_mean.statistics_` returns:
 
     ```console
     array([ 4., 13.,  6.])
     ```
 
-2. This question is validated if the filled train set is:
+##### The question 2 is validated if the filled train set is:
 
     ```console
     array([[ 7.,  6.,  5.],
@@ -12,7 +14,7 @@
         [ 1., 20.,  8.]])
     ```
 
-3. This question is validated if the filled test set is:
+##### The question 3 is validated if the filled test set is:
 
     ```console
     array([[ 4.,  1.,  2.],

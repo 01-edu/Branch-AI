@@ -1,4 +1,4 @@
-1. This question is validated if the chunk of code is:
+##### The question 1 is validated if the chunk of code is:
 
 ```
 model.compile(loss='categorical_crossentropy',

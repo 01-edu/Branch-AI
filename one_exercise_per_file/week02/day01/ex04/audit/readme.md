@@ -1,4 +1,6 @@
-1. This question is validated if the output of `y_train.values[:10]` and `y_test.values[:10]`are:
+##### The exercice is validated is all questions of the exercice are validated
+
+##### The question 1 is validated if the output of `y_train.values[:10]` and `y_test.values[:10]`are:
 
     ```console
     y_train.values[:10]: 
@@ -26,7 +28,7 @@
     [192.]]
     ```
 
-2. This question is validated if the coefficients and the intercept are:
+##### The question 2 is validated if the coefficients and the intercept are:
 
     ```console
     [('age', -60.40163046086952),
@@ -42,7 +44,7 @@
     ('intercept', 152.05314895029233)]
     ```
 
-3. This question is validated if the output of `predictions_on_test[:10]` is:
+##### The question 3 is validated if the output of `predictions_on_test[:10]` is:
 
     ```console
     array([[111.74351759],
@@ -57,4 +59,4 @@
         [224.83346984]])
     ```
 
-4. This question is validated if the mse on the **train set** is `2888.326888` and the mse on the **test set** is `2858.255153`.
+##### The question 4 is validated if the mse on the **train set** is `2888.326888` and the mse on the **test set** is `2858.255153`.

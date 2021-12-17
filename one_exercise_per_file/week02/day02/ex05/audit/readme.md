@@ -1,11 +1,13 @@
-1. This question is validated if the proportion of class `Benign` is 0.6552217453505007. It means that if you always predict `Benign` your accuracy would be 66%.
+##### The exercice is validated is all questions of the exercice are validated
 
-2. This question is validated if the proportion of one of the classes is the approximately the same on the train and test set: ~0.65. In my case:
+##### The question 1 is validated if the proportion of class `Benign` is 0.6552217453505007. It means that if you always predict `Benign` your accuracy would be 66%.
+
+##### The question 2 is validated if the proportion of one of the classes is the approximately the same on the train and test set: ~0.65. In my case:
 
 - test: 0.6571428571428571
 - train: 0.6547406082289803
 
-3. This question is validated if the output is:
+##### The question 3 is validated if the output is:
 
 ```console
 # Train
@@ -34,12 +36,11 @@ Score on test set:
 ```
 
 Only the 10 first predictions are outputted. The score is computed on all the data in the folds.
-
 For some reasons, you may have a different data splitting as mine. The requirement for this question is to have a score on the test set bigger than 92%.
 
 If the score is 1, congratulation you've leaked your first target. Drop the target from the X_train or X_test ;) !
 
-4. This question is validated if the confusion matrix on the train set is similar to:
+##### The question 4 is validated if the confusion matrix on the train set is similar to:
 
 ```console
 array([[357,   9],

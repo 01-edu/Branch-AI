@@ -1,4 +1,6 @@
-1. This question is validated if the input DataFrames are: 
+##### The exercice is validated is all questions of the exercice are validated
+
+##### The question 1 is validated if the input DataFrames are: 
 
 X_train_scaled shape is (313, 5) and the first 5 rows are:
 
@@ -41,7 +43,7 @@ The test target is:
 | 318 |  29.8 |
 | 319 |  31.3 |
 
-2. This question is validated if the mean absolute error on the test set is smaller than 10. Here is an architecture that works: 
+##### The question 2 is validated if the mean absolute error on the test set is smaller than 10. Here is an architecture that works: 
 
 ```
 # create model

@@ -1,5 +1,6 @@
+##### The exercice is validated is all questions of the exercice are validated
 
-1. This question is validated if X_train, y_train, X_test, y_test match this output:
+##### The question 1 is validated if X_train, y_train, X_test, y_test match the output below. The proportion of class `1` is **0.125** in the train set and **1.** in the test set.
 
 ```console
 X_train:  
@@ -26,6 +27,6 @@ y_test:
  [1. 1.]
 ```
 
-The proportion of class `1` is **0.125** in the train set and **1.** in the test set.
 
-2. This question is validated if the proportion of class `1` is **0.3** for both sets.
+
+##### The question 2 is validated if the proportion of class `1` is **0.3** for both sets.

@@ -1,4 +1,4 @@
-1. This question is validated if the output is:
+##### The question 1 is validated if the output is:
 
 ```console
 Scores on validation sets: 
@@ -13,4 +13,4 @@ Standard deviation of scores on validation sets:
 
 ```
 
-The model is consistent across folds: it is stable. That's a first sign that the model is not over fitted. The average R2 is 60% that's a good start ! To be improved.
+The model is consistent across folds: it is stable. That's a first sign that the model is not over-fitted. The average R2 is 60% that's a good start ! To be improved...

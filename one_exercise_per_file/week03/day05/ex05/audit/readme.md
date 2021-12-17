@@ -1,4 +1,6 @@
-1. This question is validated if the ouptut of the NER is
+##### The exercice is validated is all questions of the exercice are validated
+
+##### The question 1 is validated if the ouptut of the NER is
 
     ```
     Apple Inc. ORG
@@ -25,7 +27,7 @@
     Apple ORG
     Apple II ORG
     ```
-2. This question is validated if the output shows that the first occurence of apple is not a named entity. In my case here is what the NER returns: 
+##### The question 2 is validated if the output shows that the first occurence of apple is not a named entity. In my case here is what the NER returns: 
 
     ```
     Paul 1 5 PERSON

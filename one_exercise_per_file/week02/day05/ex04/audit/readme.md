@@ -1,4 +1,6 @@
-1. This question is validated if the outputted plot looks like:
+##### The exercice is validated is all questions of the exercice are validated
+
+##### The question 1 is validated if the outputted plot looks like:
 
 ![alt text][logo_ex5q1]
 
@@ -20,7 +22,7 @@ train_scores, test_scores = validation_curve(clf,
                                             n_jobs=-1)
 ```
 
-2. This question is validated if the output is
+##### The question 2 is validated if the outputted plots looks like:
 
 ![alt text][logo_ex5q2]
 

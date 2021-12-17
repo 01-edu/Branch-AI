@@ -1,4 +1,4 @@
-1. This question is validated if the prediction on the test set are:
+##### The question 1 is validated if the prediction on the test set are:
 
 ```console
 array([0, 0, 2, 1, 2, 0, 2, 1, 1, 1, 0, 1, 2, 0, 1, 1, 0, 0, 2, 2, 0, 0,

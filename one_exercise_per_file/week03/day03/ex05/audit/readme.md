@@ -1,4 +1,6 @@
-1. This question is validated if the output of the first ten values of the train labels are: 
+##### The exercice is validated is all questions of the exercice are validated
+
+##### The question 1 is validated if the output of the first ten values of the train labels are: 
 
 ```
 array([[0, 1, 0],
@@ -13,7 +15,7 @@ array([[0, 1, 0],
        [0, 0, 1]])
 ```
 
-2. This question is validated if the accuracy on the test set is bigger than 90%. To evaluate the accuracy on the test set you can use: `model.evaluate(X_test_sc, y_test_multi_class)`.
+##### The question 2 is validated if the accuracy on the test set is bigger than 90%. To evaluate the accuracy on the test set you can use: `model.evaluate(X_test_sc, y_test_multi_class)`.
 
 Here is an implementation that gives 96% accuracy on the test set. 
 

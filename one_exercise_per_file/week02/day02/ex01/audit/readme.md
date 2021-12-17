@@ -1,4 +1,6 @@
-1. This question is validated if the fitted logistic regression returns:
+##### The exercice is validated is all questions of the exercice are validated
+
+##### The question 1 is validated if the fitted logistic regression returns:
 
 ```python
 LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
@@ -8,11 +10,11 @@ LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
                    warm_start=False)
 ```
 
-2. This question is validated if the predicted class is `0`.
+##### The question 2 is validated if the predicted class is `0`.
 
-3. This question is validated if the predicted probabilities are `[0.61450526 0.38549474]`
+##### The question 3 is validated if the predicted probabilities are `[0.61450526 0.38549474]`
 
-4. This question is validated if the output is:
+##### The question 4 is validated if the output is:
 
 ```console
 Coefficient: 

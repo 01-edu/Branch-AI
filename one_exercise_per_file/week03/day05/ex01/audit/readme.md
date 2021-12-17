@@ -1,5 +1,4 @@
-1. This question is validated if the embedding's shape is `(96,)` 
-and the vector 20 first values are: 
+##### The question 1 is validated if the embedding's shape is `(96,)` and the vector 20 first values are: 
 
 ```
 array([ 1.0522802e+00,  1.4806499e+00,  7.7402556e-01,  1.0373484e+00,

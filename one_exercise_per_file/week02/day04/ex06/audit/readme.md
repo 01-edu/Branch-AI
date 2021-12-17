@@ -1,4 +1,6 @@
-1. This question is validated if the code that runs the `gridsearch` is (the parameters may change):
+##### The exercice is validated is all questions of the exercice are validated
+
+##### The question 1 is validated if the code that runs the `gridsearch` is (the parameters may change):
 
 ```python
 parameters = {'n_estimators':[10, 50, 75],
@@ -13,7 +15,7 @@ gridsearch = GridSearchCV(rf,
 gridsearch.fit(X, y)
 ```
 
-2. This question is validated if the function is:
+##### The question 2 is validated if the function is:
 
 ```python
 def select_model_verbose(gs):
@@ -21,9 +23,9 @@ def select_model_verbose(gs):
     return gs.best_estimator_, gs.best_params_, gs.best_score_
 ```
 
-In my case, the `gridsearch` parameters are not interesting. Even if I reduced the over fitting of the Random Forest, the score on the test is lower than the score on the test returned by the Gradient Boosting in the previous exercise without optimal parameters search.
+In my case, the `gridsearch` parameters are not interesting. Even if I reduced the over-fitting of the Random Forest, the score on the test is lower than the score on the test returned by the Gradient Boosting in the previous exercise without optimal parameters search.
 
-3. This question is validated if the code used is:
+##### The question 3 is validated if the code used is:
 
 ```python
 model, best_params, best_score = select_model_verbose(gridsearch)

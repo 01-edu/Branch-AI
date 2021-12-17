@@ -1,4 +1,4 @@
-1. This question is validated if X_train, y_train, X_test, y_test match this output:
+##### The question 1 is validated if X_train, y_train, X_test, y_test match this output:
 
 ```console
 X_train:

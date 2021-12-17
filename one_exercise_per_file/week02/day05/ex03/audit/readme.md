@@ -1,4 +1,6 @@
-1. This question is validated if the code that runs the grid search is similar to:
+##### The exercice is validated is all questions of the exercice are validated
+
+##### The question 1 is validated if the code that runs the grid search is similar to:
 
 ```python
 parameters = {'n_estimators':[10, 50, 75],
@@ -16,7 +18,7 @@ gridsearch.fit(X_train, y_train)
 
 The answers that uses another list of parameters are accepted too !
 
-2. This question is validated if you called this attributes:
+##### The question 2 is validated if you called this attributes:
 
 ```python
 print(gridsearch.best_score_)
@@ -30,4 +32,4 @@ The best models params are `{'max_depth': 10, 'n_estimators': 75}`.
 
 As you may must have a different parameters list than this one, you should have different results.
 
-3. This question is validated if you used the fitted estimator to compute the score on the test set: `gridsearch.score(X_test, y_test)`. The MSE score is ~0.27. The score I got on the test set is close to the score I got on the validation sets. It means the models is not over fitted.
+##### The question 3 is validated if you used the fitted estimator to compute the score on the test set: `gridsearch.score(X_test, y_test)`. The MSE score is ~0.27. The score I got on the test set is close to the score I got on the validation sets. It means the models is not over fitted.

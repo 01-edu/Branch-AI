@@ -1,4 +1,6 @@
-1. This question is validated if the number of unique values per feature outputted are:
+##### The exercice is validated is all questions of the exercice are validated
+
+##### The question 1 is validated if the number of unique values per feature outputted are:
 
 ```console
 age             3
@@ -13,7 +15,7 @@ irradiat        2
 dtype: int64
 ```
 
-2. This question is validated if the transformed test set by the `OneHotEncoder` fitted on the train set is:
+##### The question 2 is validated if the transformed test set by the `OneHotEncoder` fitted on the train set is:
 
     ```console
     First 10 rows: 
@@ -30,7 +32,7 @@ dtype: int64
         [1., 0., 0., 1., 0., 1., 0., 0., 0., 1., 0., 0., 1.]])
     ```
 
-3. This question is validated if the transformed test set by the `OrdinalEncoder` fitted on the train set is:
+##### The question 3 is validated if the transformed test set by the `OrdinalEncoder` fitted on the train set is:
 
     ```console
     First 10 rows: 
@@ -47,7 +49,7 @@ dtype: int64
         [1., 3., 0., 0.]])
     ```
 
-4. This question is validated if the column transformer transformed that is fitted on the X_train, transformed the X_test as:
+##### The question 3 is validated if the column transformer transformed that is fitted on the X_train, transformed the X_test as:
 
 ```console
 # First 2 rows: 

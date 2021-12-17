@@ -1,4 +1,6 @@
-1. This question is validated if the output is
+##### The exercice is validated is all questions of the exercice are validated
+
+##### The question 1 is validated if the output is
 
     |    |   ('C++',) |   ('Java',) |   ('Python',) |
     |---:|-----------:|------------:|--------------:|
@@ -7,7 +9,7 @@
     |  2 |          0 |           1 |             0 |
     |  3 |          1 |           0 |             0 |
 
-2. This question is validated if the output is:
+##### The question 2 is validated if the output is:
 
     |    |   ('C++',) |   ('Java',) |   ('Python',) |
     |---:|-----------:|------------:|--------------:|

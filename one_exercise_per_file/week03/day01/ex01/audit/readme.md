@@ -1,4 +1,4 @@
-1. This question is validated if this code:
+##### The question 1 is validated if this code:
 
     ```
     neuron = Neuron(0,1,4)
