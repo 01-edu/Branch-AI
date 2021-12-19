@@ -1,4 +1,4 @@
-# RAID01 - Backtesting on the SP500 - correction
+# RAID01 - Backtesting on the SP500 - audit
 
 ### Preliminary
 

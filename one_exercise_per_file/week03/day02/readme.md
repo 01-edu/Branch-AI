@@ -1,26 +1,32 @@
-# W3D2  Piscine AI - Data Science 
+# W3D02  Piscine AI - Data Science
 
+## Keras 
 
-# Table of Contents:
+The goal of this day is to learn to use Keras to build Neural Networks. As explained on Keras website, Keras is a deep learning API written in Python, running on top of the machine learning platform TensorFlow. It was developed with a focus on enabling fast experimentation. Being able to go from idea to result as fast as possible is key to doing good research.
+And, TensorFlow was created by the Google Brain team, TensorFlow is an open source library for numerical computation and large-scale machine learning. TensorFlow bundles together a slew of machine learning and deep learning (aka neural networking) models and algorithms and makes them useful by way of a common metaphor. It uses Python to provide a convenient front-end API for building applications with the framework, while executing those applications in high-performance C++.
 
+There are two ways to build Keras models: sequential and functional.The sequential API allows you to create models layer-by-layer for most problems. It is limited in that it does not allow you to create models that share layers or have multiple inputs or outputs. The exercises focuses on the usage of the sequential API. 
 
-# Introduction
-Keras backend TF
-The goal of this day is to learn to use Keras to build Neural Networks. 
+Note: 
 
-There are two ways to build Keras models: sequential and functional.
+The audit will provide the code and output because it is not straightforward to reproduce results using Keras. There are many source of randomness. Even if all the seeds are fixed to a constant they may be other source of randomness. https://machinelearningmastery.com/reproducible-results-neural-networks-keras/
 
-The sequential API allows you to create models layer-by-layer for most problems. It is limited in that it does not allow you to create models that share layers or have multiple inputs or outputs. The exercises focuses on the usage of the sequential API. 
+## Exercises of the day
 
-'2.4.3'
+- Exercise 1 Sequential
+- Exercise 2 Dense
+- Exercise 3 Architecture
+- Exercise 4 Optimize
 
-## Historical
+## Virtual Environment 
+- Python 3.x
+- NumPy
+- Jupyter or JupyterLab
+- Keras
 
+*Version of Keras I used to do the exercises: 2.4.3*. 
+I suggest to use the most recent one.
 
+## Ressources
 
-## Rules
-
-The correction will provide the code and output because it is not straightforward to reproduce results using Keras. There are many source of randomness. Even if all the seeds are fixed to a constant they may be other source of randomness. https://machinelearningmastery.com/reproducible-results-neural-networks-keras/
-A developper
-## Ressources 
-https://machinelearningmastery.com/tutorial-first-neural-network-python-keras/
+- https://machinelearningmastery.com/tutorial-first-neural-network-python-keras/
