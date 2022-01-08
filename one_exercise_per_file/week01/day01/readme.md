@@ -9,10 +9,10 @@ The goal of this day is to understand practical usage of **NumPy**. **NumPy** is
 - Exercise 2 Zeros
 - Exercise 3 Slicing
 - Exercise 4 Random
-- Exercise 5: Split, concatenate, reshape arrays
-- Exercise 6: Broadcasting and Slicing
-- Exercise 7: NaN
-- Exercise 8: Wine
+- Exercise 5 Split, concatenate, reshape arrays
+- Exercise 6 Broadcasting and Slicing
+- Exercise 7 NaN
+- Exercise 8 Wine
 - Exercise 9 Football tournament
 
 ## Virtual Environment 

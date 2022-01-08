@@ -18,7 +18,7 @@ gridsearch.fit(X_train, y_train)
 
 The answers that uses another list of parameters are accepted too !
 
-##### The question 2 is validated if you called this attributes:
+##### The question 2 is validated if you called these attributes:
 
 ```python
 print(gridsearch.best_score_)

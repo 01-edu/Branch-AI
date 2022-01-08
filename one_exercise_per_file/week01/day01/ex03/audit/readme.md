@@ -1,4 +1,4 @@
-##### The exercice is validated is all questions of the exercice are vaildated
+##### The exercice is validated is all questions of the exercice are validated
 
 
 ##### The question 1 is validated if the solution doesn't involve a for loop or writing all integers from 1 to 100 and if the array is: `np.array([1,...,100])`. The list from 1 to 100 can be generated with an iterator: `range`.
