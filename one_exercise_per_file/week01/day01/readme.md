@@ -5,6 +5,7 @@ The goal of this day is to understand practical usage of **NumPy**. **NumPy** is
 
 ## Exercises of the day
 
+- Exercise 0 Environment and libraries
 - Exercise 1 Your first NumPy array
 - Exercise 2 Zeros
 - Exercise 3 Slicing
