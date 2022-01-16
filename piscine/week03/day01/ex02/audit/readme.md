@@ -1,0 +1,1 @@
+##### The question 1 is validated the output is: **0.9524917424084265**

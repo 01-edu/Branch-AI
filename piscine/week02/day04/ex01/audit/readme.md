@@ -1,0 +1,1 @@
+##### The question 1 is validated if the MSE outputted is **2.25**.
