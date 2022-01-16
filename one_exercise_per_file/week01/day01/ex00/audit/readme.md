@@ -10,8 +10,6 @@
 
 ##### Does `import jupyter` and `import numpy` run without any error ? 
 
-###### Does it display the right types as above?
-
 ###### Have you used the followingthe command `jupyter notebook --port 8891` ?
 
 ###### Is there a file named `Notebook_ex00.ipynb` in the working directory ? 
