@@ -1,1 +1,0 @@
-##### The question 1 is validated if the output is: `<tensorflow.python.keras.engine.sequential.Sequential object at  xxx`
