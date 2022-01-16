@@ -1,6 +1,6 @@
 # NLP-enriched News Intelligence platform
 
-The goal of this project is to build an NLP-enriched News Intelligence platform. News analysis is a trending and important topic. The analysts get their information from the news and the amount of available information is limitless. Having a platfrom that helps to detect the relevant information is definitely valuable. 
+The goal of this project is to build an NLP-enriched News Intelligence platform. News analysis is a trending and important topic. The analysts get their information from the news and the amount of available information is limitless. Having a platform that helps to detect the relevant information is definitely valuable. 
 
 
 The platform connects to a news data source, detects the entities, detects the topic of the article, analyse the sentiment and ... 
@@ -18,7 +18,6 @@ News data source:
     - SQL database (optional)
 
     from the last week otherwise the volume may be to high 
-TODO Link: scrape in python 
 
 
 ## NLP engine 
@@ -28,7 +27,7 @@ To simplify this step the scrapper and the NLP engine are used independently in 
 
 Here how the NLP engine should process the news: 
 
-###  1. Entities detection: 
+###  **1. Entities detection:** 
 
 The goal is to detect all the entities in the document (headline and body). The type of entity we focus on is `ORG`. This corresponds to companies and organisations. This information should be stored. 
 
@@ -37,7 +36,7 @@ The goal is to detect all the entities in the document (headline and body). The 
 https://towardsdatascience.com/named-entity-recognition-with-nltk-and-spacy-8c4a7d88e7da
 
     
-### 2. Topic detection: 
+### **2. Topic detection:** 
 
 The goal is to detect what the article is dealing with: Tech, Sport, Business, Entertainment or Politics. To do so, a labelled dataset is provided. From this dataset, build a classifier that learns to detect the right topic in the article. The trained model should be stored as `topic_classifier.pkl`. Make sure the model can be used easily (with the preprocessing pipeline built for instance) because the audit requires the auditor to test the model.
 
@@ -48,7 +47,7 @@ Save the plot of learning curves (`learning_curves.png`) in `results` to prove t
 - **Optional**: If you want to train a news' topic classifier based on a more challenging dataset, you can use the following which based on 200k news headlines. https://www.kaggle.com/rmisra/news-category-dataset. 
 
 
-### 3. Sentiment analysis: 
+### **3. Sentiment analysis:**
 
 The goal is to detect the sentiment of the news articles. To do so, use a pre-trained sentiment model. I suggest to use: NLTK. 
 There are 3 reasons for which we use a pre-trained model: 
@@ -57,7 +56,7 @@ There are 3 reasons for which we use a pre-trained model:
 2. Labelled news data for sentiment analysis are very expensive. Companies as SESAMm provide this kind of services.
 3. You already know how to train a sentiment analysis classifier ;-) 
 
-### 4. Scandal detection 
+### **4. Scandal detection **
 
 The goal is to detect environmental disaster for the detected companies. Here is the methodology that should be used: 
 - Define keywords that correspond to environmental disaster that may be caused by companies: pollution, deforestation etc ... Here is an example of disaster we want to detect: https://en.wikipedia.org/wiki/MV_Erika. Pay attention to not use ambigous words that make sense in the context of an environmental disaster but also in another context. This would lead to detect a false positive natural disaster. 
@@ -70,7 +69,7 @@ The goal is to detect environmental disaster for the detected companies. Here is
 
 - Flag the top 10 articles.
 
-### 5. Source analysis (optional)
+### 5. **Source analysis (optional)**
 
 The goal is to show insights about the news' source you scrapped. 
 This requires to scrap data on at least 5 days (a week ideally). Save the plots in the `results` folder.
@@ -81,12 +80,12 @@ Here are examples of insights:
 
     - Proportion of topics per day
     - Number of articles
-    - Number of companies mentionned
+    - Number of companies mentioned
     - Sentiment per day 
 
 - Per companies: 
 
-    - Companies mentionned the most
+    - Companies mentioned the most
     - Sentiment per companies
 
 
@@ -114,7 +113,7 @@ project
 
 1.  Run the scrapper until it fetches at least 300 articles
 
-```prompt 
+``` 
 python scrapper_news.py
 
 1. scrapping <URL>
@@ -129,7 +128,7 @@ python scrapper_news.py
 
 ```
 
-2. Run on this 300 articles the nlp engine. 
+2. Run on this 300 articles the NLP engine. 
 
 Save a DataFrame:
 
@@ -173,4 +172,9 @@ Computing embeddings and distance ...
 Environmental scandal detected for <entity>
 ```
 
-I strongly suggest to create a data scructure (dictionary for example) to save all the intermediate result. Then, a boolean argument `cache` fetched the intermediate results when they are already computed. 
+I strongly suggest to create a data structure (dictionary for example) to save all the intermediate result. Then, a boolean argument `cache` fetched the intermediate results when they are already computed. 
+
+
+Ressources: 
+
+- https://www.youtube.com/watch?v=XVv6mJpFOb0
