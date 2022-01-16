@@ -1,5 +1,4 @@
-# Computer vision
-
+#  Emotions detection with Deep Learning
 Cameras are everywhere. Videos and images have become one of the most interesting data sets for artificial intelligence.
 Image processing is a quite board research area, not just filtering, compression, and enhancement. Besides, we are even interested in the question, “what is in images?”, i.e., content analysis of visual inputs, which is part of the main task of computer vision. The study of computer vision could make possible such tasks as 3D reconstruction of scenes, motion capturing, and object recognition, which are crucial for even higher-level intelligence such as
 image and video understanding, and motion understanding.
@@ -33,7 +32,7 @@ The two steps are detailed below.
 - Participate to this challenge: https://www.kaggle.com/c/digit-recognizer/code . The MNIST dataset is a reference in computer vision. Researchers use it as a benchmark to compare their models. Start first with a logistic regression to understand how to handle images in Python. And then train your first CNN on this data set.
 
 
-## Face emotions classfication
+## Face emotions classification
 
 
 Emotion detection is one of the most researched topics in the modern-day machine learning arena. The ability to accurately detect and identify an emotion opens up numerous doors for Advanced Human Computer Interaction. The aim of this project is to detect up to seven distinct facial emotions in real time. This project runs on top of a Convolutional Neural Network (CNN) that is built with the help of Keras whose backend is TensorFlow in Python. The facial emotions that can be detected and classified by this system are Happy, Sad, Angry, Surprise, Fear, Disgust and Neutral.

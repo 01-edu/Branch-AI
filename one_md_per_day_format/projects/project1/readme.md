@@ -1,4 +1,4 @@
-# First Kaggle
+# Your first Kaggle: Titanic 
 
 ## Introduction
 
