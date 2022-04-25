@@ -1,4 +1,4 @@
-##### The exercice is validated is all questions of the exercice are validated
+##### The exercice is validated if all questions of the exercice are validated
 
 ##### Activate the virtual environment. If you used `conda` run `conda activate ex00`
 
