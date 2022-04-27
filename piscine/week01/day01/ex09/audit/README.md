@@ -1,4 +1,4 @@
-This exercise is validated if the output is:
+##### This exercise is validated if the output is:
 
 ```console
  [[0 3 1 2 4]
