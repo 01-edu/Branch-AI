@@ -1,7 +1,9 @@
-1. This question is validated if the text file has successfully been loaded in a NumPy array with
+##### This exercise is validated if all the questions below are validated
+
+##### This question is validated if the text file has successfully been loaded in a NumPy array with
  `genfromtxt('winequality-red.csv', delimiter=',')` and the reduced arrays weights **76800 bytes**
 
-2. This question is validated if the output is
+##### This question is validated if the output is
 
  ```python
  array([[ 7.4   ,  0.7   ,  0.    ,  1.9   ,  0.076 , 11.    , 34.    ,
@@ -14,11 +16,11 @@
 
 This slicing gives the answer `my_data[[1,6,11],:]`.
 
-3. This question is validated if the answer if False. There many ways to get the answer: find the maximum or check values greater than 20.
+##### This question is validated if the answer if False. There many ways to get the answer: find the maximum or check values greater than 20.
 
-4. This question is validated if the answer is 10.422983114446529.
+##### This question is validated if the answer is 10.422983114446529.
 
-5. This question is validated if the answers is:
+##### This question is validated if the answers is:
 
     ```console
     pH stats
@@ -32,9 +34,9 @@ This slicing gives the answer `my_data[[1,6,11],:]`.
 
     > *Note: Using `percentile` or `median` may give different results depending on the duplicate values in the column. If you do not have my results please use `percentile`.*
 
-6. This question is validated if the answer is ~`5.2`. The first step is to get the percentile 20% of the column `sulphates`, then create a boolean array that contains `True` of the value is smaller than the percentile 20%, then select this rows with the column quality and compute the `mean`.
+##### This question is validated if the answer is ~`5.2`. The first step is to get the percentile 20% of the column `sulphates`, then create a boolean array that contains `True` of the value is smaller than the percentile 20%, then select this rows with the column quality and compute the `mean`.
 
-7. This question is validated if the output for the best wines is:
+##### This question is validated if the output for the best wines is:
 
 ```python
 array([ 8.56666667,  0.42333333,  0.39111111,  2.57777778,  0.06844444,
@@ -42,7 +44,7 @@ array([ 8.56666667,  0.42333333,  0.39111111,  2.57777778,  0.06844444,
     12.09444444,  8.        ])
 ```
 
-And the output for the bad wines is:
+##### This question is validated if the output for the bad wines is:
 
 ```python
 array([ 8.36    ,  0.8845  ,  0.171   ,  2.635   ,  0.1225  , 11.      ,
