@@ -1,6 +1,6 @@
 ##### The exercice is validated is all questions of the exercice are validated
 
-##### The solution of question 1 is accepted if you use `drop` with `axis=1`.`inplace=True` may be useful to avoid to affect the result to a variable. A solution that could be accepted too (even if it's not a solution I recommend is `del`. 
+##### The solution of question 1 is accepted if `drop` is used with `axis=1`.`inplace=True` may be useful to avoid to affect the result to a variable. A solution that could be accepted too (even if it's not a solution I recommend) is `del`. 
 
 ##### The solution of question 2 is accepted if the DataFrame returns the output below. If the type of the index is not `dtype='datetime64[ns]'` the solution is not accepted. I recommend to use  `set_index` with `inplace=True` to do so. 
 
@@ -31,7 +31,7 @@
 
 ##### The solution of question 4 is accepted if you use `df.describe()`.
 
-##### The solution of question 5 is accepted if you used `dropna` and have the number of missing values equal to 0.You should have noticed that 25979 rows contain missing values (for a total of 129895). `df.isna().sum()` allows to check the number of missing values and `df.dropna()` with `inplace=True` allows to remove the rows with missing values. 
+##### The solution of question 5 is accepted if `dropna` is used and if the number of missing values is equal to 0. It is important to notice that 25979 rows contain missing values (for a total of 129895). `df.isna().sum()` allows to check the number of missing values and `df.dropna()` with `inplace=True` allows to remove the rows with missing values. 
 
 ##### The solution of question 6 is accepted if one of the two approaches below were used:
 
