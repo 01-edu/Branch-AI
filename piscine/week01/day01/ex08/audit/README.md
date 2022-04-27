@@ -1,4 +1,4 @@
-##### This exercise is validated if all the questions below are validated
+##### The exercice is validated is all questions of the exercice are validated
 
 ##### This question is validated if the text file has successfully been loaded in a NumPy array with
  `genfromtxt('winequality-red.csv', delimiter=',')` and the reduced arrays weights **76800 bytes**
