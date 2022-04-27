@@ -1,9 +1,9 @@
 ##### The exercice is validated is all questions of the exercice are validated
 
-###### Have you checked missing values and data types ? 
-###### Have you converted string dates to datetime ? 
-###### Have you set dates as index ? 
-###### Have you used `info` or `describe` to have a first look at the data ?
+###### Have the missing values and data types been checked ? 
+###### Have the string dates been converted to datetime type ? 
+###### Have the dates been set as index ? 
+###### Have `info` or/and `describe` been used to have a first look at the data ?
 
 
 
@@ -57,6 +57,6 @@
     Name: PnL, Length: 10119, dtype: float64
 ```
 
-##### The question 4 is validated if you computed the return of the strategy as: `(Total earned - Total invested) / Total` invested. The result should be close to 0. The formula given could be simplified as `(PnLs.sum())/signal.sum()`. My return is: 0.00043546984088551553 because I invested 5147$ and I earned 5149$.
+##### The question 4 is validated if the return of the strategy is computed as: `(Total earned - Total invested) / Total` invested. The result should be close to 0. The formula given could be simplified as `(PnLs.sum())/signal.sum()`. My return is: 0.00043546984088551553 because I invested 5147$ and I earned 5149$.
 
-##### The question is validated if you replaced the previous signal Series with 1s. Similarly as the previous question, we earned 10128$ and we invested 10118$ which leads to a return of 0.00112670194140969 (0.1%).
+##### The question is validated if the previous signal Series is replaced with 1s. Similarly as the previous question, we earned 10128$ and we invested 10118$ which leads to a return of 0.00112670194140969 (0.1%).
