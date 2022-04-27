@@ -4,7 +4,7 @@
 
 ##### The question 2 is validated if the generated array is based on an iterator as `range` or `np.arange`. Check that 100 is part of the array.
 
-##### The question 3 is validated if you concatenated this way `np.concatenate(array1,array2)`.
+##### The question 3 is validated if the array is concatenated this way `np.concatenate(array1,array2)`.
 
 ##### The question 4 is validated if the result is:
 
