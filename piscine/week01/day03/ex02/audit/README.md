@@ -1,4 +1,4 @@
-##### The solution of question 1 is accepted if the plot reproduces the plot in the image and respect the following criteria. You should also observe that the older people are, the the more children they have. 
+##### The solution of question 1 is accepted if the plot reproduces the plot in the image and respect the following criteria. It is important to observe that the older people are, the the more children they have. 
 
 ###### Does it have a the title ? 
 ###### Does it have a name on x-axis and y-axis ?
