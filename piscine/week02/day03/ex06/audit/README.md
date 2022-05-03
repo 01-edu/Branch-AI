@@ -8,4 +8,4 @@ array([0, 0, 2, 1, 2, 0, 2, 1, 1, 1, 0, 1, 2, 0, 1, 1, 0, 0, 2, 2, 0, 0,
 
 and the score on the test set is **98%**.
 
-**Note: Keep in mind that having a 98% accuracy is not common on real life data. Every time you have a score > 97% check that there's no leakage in the data. On financial data set, the ratio signal to noise is low. Trying to forecast stock prices is a difficult problem. Having an accuracy higher than 70% should be interpreted as a warning to check data leakage !**
+**Note: Keep in mind that having a 98% accuracy is not common when working with real life data. Every time you have a score > 97% check that there's no leakage in the data. On financial data set, the ratio signal to noise is low. Trying to forecast stock prices is a difficult problem. Having an accuracy higher than 70% should be interpreted as a warning to check data leakage !**
