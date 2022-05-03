@@ -38,7 +38,7 @@ Score on test set:
 Only the 10 first predictions are outputted. The score is computed on all the data in the folds.
 For some reasons, you may have a different data splitting as mine. The requirement for this question is to have a score on the test set bigger than 92%.
 
-If the score is 1, congratulation you've leaked your first target. Drop the target from the X_train or X_test ;) !
+If the score is 1, congratulate you peer, he's just leaked his first target. The target should be dropped from the X_train or X_test ;) !
 
 ##### The question 4 is validated if the confusion matrix on the train set is similar to:
 
@@ -54,4 +54,4 @@ array([[90,  2],
        [ 3, 45]])
 ```
 
-As said, for some reasons, you may have slightly different results because of the data splitting. However, the values you have in the confusion matrix should be close to these results.
+As said, for some reasons, the results may be slightly different from mine because of the data splitting. However, the values in the confusion matrix should be close to these results.
