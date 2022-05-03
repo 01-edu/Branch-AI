@@ -18,7 +18,7 @@ gridsearch.fit(X_train, y_train)
 
 The answers that uses another list of parameters are accepted too !
 
-##### The question 2 is validated if you called these attributes:
+##### The question 2 is validated if these attributes were used:
 
 ```python
 print(gridsearch.best_score_)
@@ -30,6 +30,6 @@ The best score is -0.29028202683007526, that means that the MSE is ~0.29, it doe
 
 The best models params are `{'max_depth': 10, 'n_estimators': 75}`.
 
-As you may must have a different parameters list than this one, you should have different results.
+Note that if the parameters used are different, the results should be different. 
 
-##### The question 3 is validated if you used the fitted estimator to compute the score on the test set: `gridsearch.score(X_test, y_test)`. The MSE score is ~0.27. The score I got on the test set is close to the score I got on the validation sets. It means the models is not over fitted.
+##### The question 3 is validated if the fitted estimator was used to compute the score on the test set: `gridsearch.score(X_test, y_test)`. The MSE score is ~0.27. The score I got on the test set is close to the score I got on the validation sets. It means the models is not over fitted.
