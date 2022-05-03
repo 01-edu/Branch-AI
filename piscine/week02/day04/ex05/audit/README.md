@@ -1,4 +1,4 @@
-##### The question is validated of the scores you output are close to the scores below. Some of the algorithms use random steps (random sampling used by the `RandomForest`). I used `random_state = 43` for the Random Forest, the Decision Tree and the Gradient Boosting. 
+##### The question is validated if the scores outputted are close to the scores below. Some of the algorithms use random steps (random sampling used by the `RandomForest`). I used `random_state = 43` for the Random Forest, the Decision Tree and the Gradient Boosting. 
 
 ```console
 # Linear regression 
@@ -67,6 +67,6 @@ MSE on the test set:  0.27058170064218096
 
 ```
 
-It is important to notice that the Decision Tree overfits very easily. It learns easily the training data but is not able to extrapolate on the test set. This algorithm is not used a lot its overfitting ability.
+It is important to notice that the Decision Tree overfits very easily. It learns easily the training data but is not able to extrapolate on the test set. This algorithm is not used a lot because of its overfitting ability.
 
-However, Random Forest and Gradient Boosting propose a solid approach to correct the over fitting (in that case the parameters `max_depth` is set to None that is why the Random Forest over fits the data). These two algorithms are used intensively in Machine Learning Projects.
+However, Random Forest and Gradient Boosting propose a solid approach to correct the overfitting (in that case the parameters `max_depth` is set to None that is why the Random Forest overfits the data). These two algorithms are used intensively in Machine Learning Projects.
