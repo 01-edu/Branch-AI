@@ -19,7 +19,7 @@ Coefficient:  [[1.18866075]]
 
 [ex3q2]: ../w2_day2_ex3_q3.png "Scatter plot"
 
-##### The question 4 is validated if `predict_probability` outputs the same probabilities as `predict_proba`. Note that the values have to match one of the class probabilities, not both. To do so, compare your output with: `clf.predict_proba(X)[:,1]`. The shape of the arrays is not important.
+##### The question 4 is validated if `predict_probability` outputs the same probabilities as `predict_proba`. Note that the values have to match one of the class probabilities, not both. To do so, compare the output with: `clf.predict_proba(X)[:,1]`. The shape of the arrays is not important.
 
 ##### The question 5 is validated if `predict_class` outputs the same classes as `cfl.predict(X)`. The shape of the arrays is not important.
 
