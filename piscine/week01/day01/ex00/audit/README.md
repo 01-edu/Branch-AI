@@ -1,12 +1,14 @@
 ##### The exercice is validated if all questions of the exercice are validated
 
+##### Install the virtual environment with `requirements.txt`
+
 ##### Activate the virtual environment. If you used `conda`, run `conda activate ex00`
 
 ###### Does the shell specify the name `ex00` of the environment on the left ?
 
 ##### Run `python --version`
 
-###### Does it print `Python 3.8.x`? x could be any number from 0 to 9. 
+###### Does it print `Python 3.8.x`? x could be any number from 0 to 9 
 
 ##### Does `import jupyter` and `import numpy` run without any error ? 
 
