@@ -43,7 +43,7 @@ I recommend to use:
 - the virtual environment you're the most confortable with. `virtualenv` and `conda` are the most used in Data Science.
 - one of the most recents versions of the libraries required
 
-1. Create a virtual environment named `ex00`, with Python `3.8`, with the following libraries: `numpy`, `jupyter`.
+1. Create a virtual environment named `ex00`, with Python `3.8`, with the following libraries: `numpy`, `jupyter`. Save the installed packages in `requirements.txt` in the current directory.
 
 2. Launch a `jupyter notebook` on port `8891` and create a notebook named `Notebook_ex00`. `JupyterLab` can be used instead of Jupyter Notebook here. 
 
@@ -60,3 +60,4 @@ I recommend to use:
 - https://numpy.org/
 - https://towardsdatascience.com/jypyter-notebook-shortcuts-bf0101a98330
 - https://odsc.medium.com/why-you-should-be-using-jupyter-notebooks-ea2e568c59f2
+- https://stackoverflow.com/questions/50777849/from-conda-create-requirements-txt-for-pip3 
