@@ -1,6 +1,6 @@
 ##### The exercice is validated if all questions of the exercice are validated
 
-##### Activate the virtual environment. If you used `conda` run `conda activate ex00`
+##### Activate the virtual environment. If you used `conda`, run `conda activate ex00`
 
 ###### Does the shell specify the name `ex00` of the environment on the left ?
 
