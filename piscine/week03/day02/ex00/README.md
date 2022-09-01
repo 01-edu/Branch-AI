@@ -25,6 +25,7 @@ The audit will provide the code and output because it is not straightforward to 
 - Pandas
 - Jupyter or JupyterLab
 - Keras
+- Scikit-learn
 
 *Version of Keras I used to do the exercises: 2.4.3*. 
 I suggest to use the most recent one.
@@ -46,4 +47,4 @@ I recommend to use:
 - the virtual environment you're the most confortable with. `virtualenv` and `conda` are the most used in Data Science.
 - one of the most recents versions of the libraries required
 
-1. Create a virtual environment named with a version of Python >= `3.8`, with the following libraries: `pandas`, `numpy`, `jupyter`, and `keras`.
+1. Create a virtual environment named with a version of Python >= `3.8`, with the following libraries: `pandas`, `numpy`, `jupyter`, `sklearn`, and `keras`.
