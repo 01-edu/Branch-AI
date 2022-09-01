@@ -4,7 +4,7 @@ The goal of this exercise is to learn to perform a backtest in Pandas. A backtes
 
 We will backtest a **long only** strategy on Apple Inc. Long only means that we only consider buying the stock. The input signal at date d says if the close price will increase at d+1. We assume that the input signal is available before the market closes.
 
-1. Drop the rows with missing values and compute the daily futur return on the Apple stock on the adjusted close price. The daily futur return means: **Return(t) = (Price(t+1) - Price(t))/Price(t)**.
+1. Drop the rows with missing values and compute the daily futur return on the Apple stock (`AAPL.csv`) on the adjusted close price. The daily futur return means: **Return(t) = (Price(t+1) - Price(t))/Price(t)**.
 There are some events as splits or dividents that artificially change the price of the stock. That is why the close price is adjusted to avoid to have outliers in the price data.
 
 2. Create a Series that contains a random boolean array with **p=0.5**
