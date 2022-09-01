@@ -40,7 +40,7 @@ x1 = 2 , x2 = 3 , w1 = 0, w2= 1, b = 4
         self.weights_2 = weight2
         self.bias = bias
 
-    def feedforward(self, x1, x2):
+    def feedforward(cls, x1, x2):
         #TODO
         return y
 
