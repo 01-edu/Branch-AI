@@ -21,6 +21,8 @@ Word embeddings is a technique where individual words of a domain or language ar
 - Jupyter or JupyterLab
 - Pandas
 - Spacy
+- Scikit-learn
+- Matplotlib
 
 I suggest to use the most recent libraries.
 
@@ -44,4 +46,4 @@ I recommend to use:
 - the virtual environment you're the most confortable with. `virtualenv` and `conda` are the most used in Data Science.
 - one of the most recents versions of the libraries required
 
-1. Create a virtual environment named with a version of Python >= `3.8`, with the following libraries: `pandas`, `jupyter`, `spacy`.
+1. Create a virtual environment named with a version of Python >= `3.8`, with the following libraries: `pandas`, `jupyter`, `spacy`, `sklearn`, `matplotlib`.
