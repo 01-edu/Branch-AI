@@ -3,14 +3,14 @@
 ##### The question 1 is validated if the number of unique values per feature outputted are:
 
 ```console
-age             3
-menopause      11
-tumor-size      7
-inv-nodes       2
-node-caps       3
-deg-malig       2
-breast          5
-breast-quad     2
+age             6
+menopause       3
+tumor-size     11
+inv-nodes       6
+node-caps       2
+deg-malig       3
+breast          2
+breast-quad     5
 irradiat        2
 dtype: int64
 ```
