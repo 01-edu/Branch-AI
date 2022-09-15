@@ -1,11 +1,2 @@
-##### The question 1 is validated if the embedding's shape is `(96,)` and the vector 20 first values are: 
-
-```
-array([ 1.0522802e+00,  1.4806499e+00,  7.7402556e-01,  1.0373484e+00,
-        4.1474584e-01, -5.7604712e-01,  3.0856287e+00,  1.4814860e-01,
-       -3.0170975e+00,  3.4453702e+00,  6.3330579e-01,  1.1655847e+00,
-        3.8489954e+00,  2.3469532e+00,  5.0532556e-01, -1.9386177e+00,
-        9.7954911e-01,  2.3573284e+00, -1.9812435e-03,  5.5679207e+00],
-      dtype=float32)
-
-```
+##### The question 1 is validated if the embedding's shape is `(96,)` 
+##### The question 1 is validated if the 20 first values of the vector sum to `2.9790137708187103`
