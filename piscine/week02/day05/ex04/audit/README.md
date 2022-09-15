@@ -1,6 +1,4 @@
-##### The exercice is validated is all questions of the exercice are validated
-
-##### The question 1 is validated if the outputted plot looks like:
+##### The question 1 is validated if the outputted plot looks like the plot below. The two important points to check are: The training score has to converge towards `1` and the cross-validation score reaches a plateau around `0.9` from `max_depth = 10`
 
 ![alt text][logo_ex5q1]
 
