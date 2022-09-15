@@ -1,7 +1,4 @@
-##### The exercice is validated is all questions of the exercice are validated
-
-
-##### The question 1 is validated if the output is similar to what `unstacked_df.head()`returns:
+##### The question 1 is validated if the output is similar (as the values are generated randomly, it's obvious the audit doesn't require to match the values below) to what `unstacked_df.head()`returns:
 
     | Date                |   ('Prediction', 'AAPL') |   ('Prediction', 'AMZN') |   ('Prediction', 'DAI') |   ('Prediction', 'FB') |   ('Prediction', 'GE') |
     |:--------------------|-------------------------:|-------------------------:|------------------------:|-----------------------:|-----------------------:|
@@ -10,4 +7,4 @@
     | 2021-01-05 00:00:00 |                 0.211489 |                 1.84867  |                0.287906 |             -1.81119   |                1.20321 |
 
 
-##### The question 2 is validated if the answer is: `unstacked.plot(title = 'Stocks 2021')`. The title can be anything else.
+###### The question 2 is validated if the answer is: `unstacked.plot(title = 'Stocks 2021')`. The title can be anything else.
