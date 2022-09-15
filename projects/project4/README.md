@@ -23,12 +23,8 @@ The first file contains SP500 index data (OHLC: 4 time-series) and the other fil
 
 Note: Financial data can be complex and tricky to analyse for a lot of reasons. In order to focus on Time Series forecasting, the project gives access to a "simplified" financial dataset. For instance, we consider the composition of the SP500 remains similar over time which is not true and which introduces a "survivor bias". Plus, the data during covid-19 was removed because it may have a significant impact on the backtesting. 
 
-Note: Financial data can be complex and tricky to analyse for a lot of reasons. In order to focus on Time Series forecasting, the project gives access to a "simplified" financial dataset. For instance, we consider the composition of the SP500 remains similar over time which is not true and which introduces a "survivor bias". Plus, the data during covid-19 was removed because it may have a significant impact on the backtesting. 
-
-Note: Financial data can be complex and tricky to analyse for a lot of reasons. In order to focus on Time Series forecasting, the project gives access to a "simplified" financial dataset. For instance, we consider the composition of the SP500 remains similar over time which is not true and which introduces a "survivor bias". Plus, the data during covid-19 was removed because it may have a significant impact on the backtesting. 
-
-**"No leakage" small guide:**
-We assume it is day D and we want to take a position on the next h days on the next day. The position starts on day D+1 (included). To decide wether we take a short or long position the return between day D+1 and D+2 is computed and used as a target. Finally, as features on day contain information until day D 11:59pm, target need to be shifted. As a result, the final dataframe schema is:
+**"No leakage" [intro](https://en.wikipedia.org/wiki/Leakage_(machine_learning)) and small guide:**
+We assume it is day D and we want to take a position on the next h days on the next day. The position starts on day D+1 (included). To decide wether we take a short or long position the return between day D+1 and D+2 is computed and used as a target. Finally, as features on day contain information until day D 11:59pm, target need to be shifted. As a result, the final dataframe schema is: 
 
 | Index   |          Features          |           Target |
 | ------- | :------------------------: | ---------------: |
