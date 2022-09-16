@@ -2,7 +2,7 @@
 
 ##### Run all the cells of the notebook or `python main.py`
 
-##### The type printed are as follow.
+###### Are the types printed are as follows ?
 
 ```
 <class 'int'>
