@@ -1,4 +1,4 @@
-##### This exercise is validated if the your_numpy_array is a NumPy array. It can be checked with `type(your_numpy_array)` that should be equal to `numpy.ndarray`. 
+###### Is the your_numpy_array an NumPy array ? It can be checked with `type(your_numpy_array)` that should be equal to `numpy.ndarray`. 
 
 ##### Run all the cells of the notebook or `python main.py`
 
