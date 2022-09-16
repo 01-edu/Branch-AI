@@ -7,4 +7,4 @@
     | 2021-01-05 00:00:00 |                 0.211489 |                 1.84867  |                0.287906 |             -1.81119   |                1.20321 |
 
 
-###### The question 2 is validated if the answer is: `unstacked.plot(title = 'Stocks 2021')`. The title can be anything else.
+##### The question 2 is validated if the answer is: `unstacked.plot(title = 'Stocks 2021')`. The title can be anything else.
