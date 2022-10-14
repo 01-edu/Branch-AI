@@ -4,7 +4,7 @@ The goal of this project is to use cartographic variables to classify forest cat
 
 ## Data
 
-The input files are `train.csv`, `test.csv` and `covtype.data`:
+The input files are `train.csv`, `test.csv` and `covtype.info`:
 
 - `train.csv`
 - `test.csv`
