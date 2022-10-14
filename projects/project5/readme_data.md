@@ -2,7 +2,7 @@
 
 This file describes the available data for the project.
 
-![alt data description](project5_data_description.png "Credit scoring data description")
+![alt data description](data_description.png "Credit scoring data description")
 
 ## application_{train|test}.csv
 
