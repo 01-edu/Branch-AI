@@ -2,7 +2,8 @@
 
 The goal of this exercise is to learn to manipulate real data with Pandas.
 
-The data set used is **Individual household electric power consumption**
+The data set used is [**Individual household electric power consumption**](https://assets.01-edu.org/ai-branch/piscine-ai/household_power_consumption.txt)
+
 
 1. Delete the columns `Time`, `Sub_metering_2` and `Sub_metering_3`
 2. Set `Date` as index
