@@ -151,3 +151,7 @@ Preprocessing ...
 
 - https://arxiv.org/pdf/1812.06387.pdf
 
+
+### Files needed for this project
+
+[link](https://assets.01-edu.org/ai-branch/project3/challenges-in-representation-learning-facial-expression-recognition-challenge.zip)
