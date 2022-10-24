@@ -99,3 +99,7 @@ Once you have selected the best model and you are confident it will perform well
 - Predict on the test set and compute the accuracy
 - Save the predictions in a csv file
 - Add your score on the `README.md`
+
+### Files needed for this project
+
+[link](https://assets.01-edu.org/ai-branch/piscine-ai/raid02/raid02-20221024T133335Z-001.zip)
