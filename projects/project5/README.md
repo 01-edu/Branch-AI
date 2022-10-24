@@ -110,3 +110,8 @@ project
 ## Useful resources
 
 - https://towardsdatascience.com/interpretability-in-machine-learning-70c30694a05f
+
+### Files needed for this project
+
+[File 1](https://assets.01-edu.org/ai-branch/project5/project05-20221024T130417Z-001.zip)
+[File 2](https://assets.01-edu.org/ai-branch/project5/project05-20221024T130417Z-002.zip)
