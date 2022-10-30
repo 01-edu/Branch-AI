@@ -1,7 +1,5 @@
 # Financial strategies on the SP500
 
-TODO: data delivery and choose train/test split date. 
-
 In this project we will apply machine to finance. You are a Quant/Data Scientist and your goal is to create a financial strategy based on a signal outputted by a machine learning model that overperforms the [SP500](https://en.wikipedia.org/wiki/S%26P_500). 
 
 
@@ -19,11 +17,13 @@ The project is divided in parts:
 ## Deliverables
 
 Do not forget to check the ressources of W1D5 and espcially W1D5E4. 
-TODO: replace by quest name and exercice number
 
 ### Data processing and features engineering
-- Split the data in train and test (TODO: choose the year - once the data is delivered)
+The first file contains SP500 index data (OHLC: 4 time-series) and the other file contains the OHLCV data on the SP500 contituents. 
+- Split the data in train and test. The test set should set from **2017** . 
 - Your first priority is to build a dataset without leakage !!! NO LEAKAGE !!! 
+
+Note: Financial data can be complex and tricky to analyse for a lot of reasons. In order to focus on Time Series forecasting, the project gives access to a "simplified" financial dataset. For instance, we consider the composition of the SP500 remains similar over time which is not true and which introduces a "survivor bias". Plus, the data during covid-19 was removed because it may have a significant impact on the backtesting. 
 
 **"No leakage" small guide:**
 We assume it is day D and we want to take a position on the next h days on the next day. The position starts on day D+1 (included). To decide wether we take a short or long position the return between day D+1 and D+2 is computed and used as a target. Finally, as features on day contain information until day D 11:59pm, target need to be shifted. As a result, the final dataframe schema is: 
