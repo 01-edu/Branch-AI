@@ -1,6 +1,6 @@
 # Financial strategies on the SP500
  
- This documents is the correction of the project 4. Some steps are detailed in W1D5E4. TODO: replace with quest name
+ This documents is the correction of the project 4. Some steps are detailed in W1D5E4.
  
 
 ```
@@ -125,9 +125,6 @@ project
 ### Report
 
 ###### Does the report detail the features used ? 
-
 ###### Does the report detail the pipeline used (imputer, scaler, dimension reduction and model) ? 
-
 ###### Does the report detail the cross-validation used (length of train sets and validation sets and if possible the cross-validation plot) ? 
-
 ###### Does the report detail the strategy chosen (description, PnL plot and the strategy metrics on the train set and test set) ? 
