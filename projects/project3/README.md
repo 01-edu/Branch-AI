@@ -57,10 +57,7 @@ You have to save the trained model in `my_own_model.pkl` and to explain the chos
 
 - Predict at least one emotion per second from the video stream. The minimum requirement is printing in the prompt the predicted emotion with its associated probability. If there's any problem related to the webcam use as input the a recorded video stream. 
 
-For that step, I suggest again to use **OpenCV** as much as possible: 
-    
-    - https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_gui/py_video_display/py_video_display.html
-
+For that step, I suggest again to use **OpenCV** as much as possible. This link shows how to work with a video stream with OpenCV. OpenCV documentation may become deprecated in the futur. However, OpenCV will always provide tools to work with video streams, so search on the internet for OpenCV documentation and more specifically "opencv video streams". https://docs.opencv.org/4.x/dd/d43/tutorial_py_video_display.html
 
 - Optional: **(very cool)** Hack the CNN. Take a picture for which the prediction of your CNN is **Happy**. Now, hack the CNN:  using the same image **SLIGHTLY** modified make the CNN predict **Sad**. https://medium.com/@ageitgey/machine-learning-is-fun-part-8-how-to-intentionally-trick-neural-networks-b55da32b7196
 
