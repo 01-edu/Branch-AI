@@ -17,20 +17,20 @@ dtype: int64
 
 ##### The question 2 is validated if the transformed test set by the `OneHotEncoder` fitted on the train set is as below. Make sure the transformer takes as input a dataframe with the columns in the order defined `['node-caps' , 'breast', 'breast-quad', 'irradiat']` :
 
-    ```console
-    First 10 rows: 
-    array([[1., 0., 1., 0., 0., 1., 0., 0., 0., 1., 0.],
-           [1., 0., 1., 0., 0., 1., 0., 0., 0., 1., 0.],
-           [1., 0., 1., 0., 0., 0., 0., 1., 0., 1., 0.],
-           [1., 0., 0., 1., 0., 1., 0., 0., 0., 1., 0.],
-           [1., 0., 0., 1., 0., 0., 0., 1., 0., 1., 0.],
-           [1., 0., 0., 1., 0., 0., 1., 0., 0., 1., 0.],
-           [1., 0., 0., 1., 0., 0., 1., 0., 0., 1., 0.],
-           [1., 0., 0., 1., 0., 1., 0., 0., 0., 1., 0.],
-           [1., 0., 0., 1., 0., 0., 1., 0., 0., 1., 0.],
-           [0., 1., 1., 0., 0., 0., 1., 0., 0., 0., 1.]])
-       
-    ```
+```console
+First 10 rows: 
+array([[1., 0., 1., 0., 0., 1., 0., 0., 0., 1., 0.],
+       [1., 0., 1., 0., 0., 1., 0., 0., 0., 1., 0.],
+       [1., 0., 1., 0., 0., 0., 0., 1., 0., 1., 0.],
+       [1., 0., 0., 1., 0., 1., 0., 0., 0., 1., 0.],
+       [1., 0., 0., 1., 0., 0., 0., 1., 0., 1., 0.],
+       [1., 0., 0., 1., 0., 0., 1., 0., 0., 1., 0.],
+       [1., 0., 0., 1., 0., 0., 1., 0., 0., 1., 0.],
+       [1., 0., 0., 1., 0., 1., 0., 0., 0., 1., 0.],
+       [1., 0., 0., 1., 0., 0., 1., 0., 0., 1., 0.],
+       [0., 1., 1., 0., 0., 0., 1., 0., 0., 0., 1.]])
+
+```
 
 ##### The question 3 is validated if the transformed test set by the `OrdinalEncoder` fitted on the train set is as below with the columns ordered as `["menopause", "age", "tumor-size","inv-nodes", "deg-malig"]`:
 
@@ -52,9 +52,9 @@ array([[1., 2., 5., 0., 1.],
 
 ##### The question 4 is validated if the column transformer transformed that is fitted on the X_train, transformed the X_test as:
 
-    ```console
-    # First 2 rows: 
+```console
+# First 2 rows: 
 
-    array([[1., 0., 1., 0., 0., 1., 0., 0., 0., 1., 0., 1., 2., 5., 0., 1.],
-           [1., 0., 1., 0., 0., 1., 0., 0., 0., 1., 0., 1., 3., 4., 0., 1.]])
-    ```
+array([[1., 0., 1., 0., 0., 1., 0., 0., 0., 1., 0., 1., 2., 5., 0., 1.],
+       [1., 0., 1., 0., 0., 1., 0., 0., 0., 1., 0., 1., 3., 4., 0., 1.]])
+```
