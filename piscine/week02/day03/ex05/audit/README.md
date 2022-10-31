@@ -18,7 +18,8 @@ dtype: int64
 ##### The question 2 is validated if the transformed test set by the `OneHotEncoder` fitted on the train set is as below. Make sure the transformer takes as input a dataframe with the columns in the order defined `['node-caps' , 'breast', 'breast-quad', 'irradiat']` :
 
 ```console
-First 10 rows: 
+#First 10 rows: 
+
 array([[1., 0., 1., 0., 0., 1., 0., 0., 0., 1., 0.],
        [1., 0., 1., 0., 0., 1., 0., 0., 0., 1., 0.],
        [1., 0., 1., 0., 0., 0., 0., 1., 0., 1., 0.],
@@ -35,7 +36,7 @@ array([[1., 0., 1., 0., 0., 1., 0., 0., 0., 1., 0.],
 ##### The question 3 is validated if the transformed test set by the `OrdinalEncoder` fitted on the train set is as below with the columns ordered as `["menopause", "age", "tumor-size","inv-nodes", "deg-malig"]`:
 
 ```console
-First 10 rows: 
+#First 10 rows: 
 
 array([[1., 2., 5., 0., 1.],
    [1., 3., 4., 0., 1.],
