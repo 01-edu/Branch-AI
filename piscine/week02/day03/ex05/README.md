@@ -1,6 +1,6 @@
 # Exercise 5 Categorical variables
 
-The goal of this exercise is to learn how to deal with Categorical variables with Ordinal Encoder, Label Encoder and One Hot Encoder.
+The goal of this exercise is to learn how to deal with Categorical variables with Ordinal Encoder, Label Encoder and One Hot Encoder. For this exercice I strongly suggest to use a recent version of `sklearn >= 0.24.1` to avoid issues with the Ordinal Encoder. 
 
 Preliminary:
 
@@ -11,32 +11,33 @@ Preliminary:
 
 1. Count the number of unique values per feature in the train set.
 
-2. Identify the variables ordinal variables, nominal variables and the target. Create one One Hot Encoder for all categorical features (no ordinal). Here are the assumptions made on the variables:
+2. Identify the variables ordinal variables, nominal variables and the target. Compute a One Hot Encoder transformation on the test set for all categorical features (no ordinal) in the following order `['node-caps' , 'breast', 'breast-quad', 'irradiat']`. Here are the assumptions made on the variables:
 
 ```console
 age: Ordinal
-['ge40'> 'premeno' >'lt40']
+['90-99' > '80-89' > '70-79' > '60-69' > '50-59' > '40-49' > '30-39' > '20-29' > '10-19']
 
 menopause: Ordinal
-['50-54' > '45-49' > '40-44' >  '35-39' > '30-34' > '25-29'> '20-24' > '15-19' > '10-14' > '5-9' > '0-4']
+['ge40'> 'premeno' >'lt40']
 
 tumor-size: Ordinal
-['15-17' >  '12-14' > '9-11' > '6-8' > '3-5' > '0-2']
+['55-59' > '50-54' > '45-49' > '40-44' > '35-39' > '30-34' > '25-29' > '20-24' > '15-19' > '10-14' > '5-9' > '0-4']
 
-inv-nodes: One Hot 
+inv-nodes: Ordinal 
+['36-39' > '33-35' > '30-32' > '27-29' > '24-26' > '21-23' > '18-20' > '15-17' > '12-14' > '9-11' > '6-8' > '3-5' > '0-2']
+
+node-caps: One Hot
 ['yes' 'no']
 
-node-caps: Ordinal
+deg-malig: Ordinal
 [3 > 2 > 1]
 
-deg-malig: One Hot 
+breast: One Hot 
 ['left' 'right']
 
-breast: One Hot 
+breast-quad: One Hot 
 ['right_low' 'left_low' 'left_up' 'central' 'right_up']
 
-breast-quad: One Hot 
-['yes' 'no']
 
 irradiat: One Hot 
 ['recurrence-events' 'no-recurrence-events']
@@ -49,42 +50,44 @@ irradiat: One Hot
 Example of expected output:
 
 ```console
-# One Hot encoder on: ['inv-nodes', 'deg-malig', 'breast', 'breast-quad', 'irradiat']
+# One Hot encoder on: ['node-caps' , 'breast', 'breast-quad', 'irradiat']
 
-input: ohe.transform(df[ohe_cols]) 
+input: ohe.transform(X_test[ohe_cols])[:10]
 output:
-array([[0., 1., 0., ..., 0., 0., 1.],
-    [1., 0., 0., ..., 0., 1., 0.],
-    [1., 0., 1., ..., 0., 0., 1.],
-    ...,
-    [0., 1., 0., ..., 0., 1., 0.],
-    [1., 0., 0., ..., 0., 1., 0.],
-    [1., 0., 1., ..., 0., 1., 0.]])
+array([[1., 0., 1., 0., 0., 1., 0., 0., 0., 1., 0.],
+       [1., 0., 1., 0., 0., 1., 0., 0., 0., 1., 0.],
+       [1., 0., 1., 0., 0., 0., 0., 1., 0., 1., 0.],
+       [1., 0., 0., 1., 0., 1., 0., 0., 0., 1., 0.],
+       [1., 0., 0., 1., 0., 0., 0., 1., 0., 1., 0.],
+       [1., 0., 0., 1., 0., 0., 1., 0., 0., 1., 0.],
+       [1., 0., 0., 1., 0., 0., 1., 0., 0., 1., 0.],
+       [1., 0., 0., 1., 0., 1., 0., 0., 0., 1., 0.],
+       [1., 0., 0., 1., 0., 0., 1., 0., 0., 1., 0.],
+       [0., 1., 1., 0., 0., 0., 1., 0., 0., 0., 1.]])
 
 input: ohe.get_feature_names(ohe_cols)
 output: 
-array(['inv-nodes_no', 'inv-nodes_yes', 'deg-malig_left',
-       'deg-malig_right', 'breast_central', 'breast_left_low',
-       'breast_left_up', 'breast_right_low', 'breast_right_up',
-       'breast-quad_no', 'breast-quad_yes',
-       'irradiat_no-recurrence-events', 'irradiat_recurrence-events'],
+array(['node-caps_no', 'node-caps_yes', 'breast_left', 'breast_right',
+       'breast-quad_central', 'breast-quad_left_low',
+       'breast-quad_left_up', 'breast-quad_right_low',
+       'breast-quad_right_up', 'irradiat_no', 'irradiat_yes'],
       dtype=object)
 
 ```
 
-3. Create one Ordinal encoder for all Ordinal features. The documentation of Scikit-learn is not clear on how to perform this on many columns at the same time. Here's a **hint**:
+3. Create one Ordinal encoder for all Ordinal features in the following order `["menopause", "age", "tumor-size","inv-nodes", "deg-malig"]` on the test set. The documentation of Scikit-learn is not clear on how to perform this on many columns at the same time. Here's a **hint**:
 
 If the ordinal data set is (subset of two columns but I keep all rows for this example):
 
-    |    | age     |   node-caps |
-    |---:|:--------|------------:|
-    |  0 | premeno |           3 |
-    |  1 | ge40    |           1 |
-    |  2 | ge40    |           2 |
-    |  3 | premeno |           3 |
-    |  4 | premeno |           2 |
+    |    | menopause     |   deg-malig |
+    |---:|:--------------|------------:|
+    |  0 | premeno       |           3 |
+    |  1 | ge40          |           1 |
+    |  2 | ge40          |           2 |
+    |  3 | premeno       |           3 |
+    |  4 | premeno       |           2 |
 
-The first step is to create a dictionnary:
+The first step is to create a dictionnary or a list - the most recent version of sklearn take as input lists:
 
 ```console
 dict_ = {0: ['lt40', 'premeno' , 'ge40'], 1:[1,2,3]}
